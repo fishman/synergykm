@@ -1,0 +1,24 @@
+/CAddScreen.cpp/1.2/Thu Mar 23 06:03:00 2006//
+/CAddScreen.h/1.1/Tue Oct 18 02:31:52 2005//
+/CAdvancedOptions.cpp/1.4/Tue Oct 18 02:31:52 2005//
+/CAdvancedOptions.h/1.3/Sun Nov  7 22:36:33 2004//
+/CAutoStart.cpp/1.8/Thu Mar 23 06:03:00 2006//
+/CAutoStart.h/1.5/Thu Mar 23 06:03:00 2006//
+/CGlobalOptions.cpp/1.5/Sun Aug  7 18:43:58 2005//
+/CGlobalOptions.h/1.2/Fri Mar 28 04:28:11 2003//
+/CHotkeyOptions.cpp/1.2/Sun Jun 17 17:31:09 2007//
+/CHotkeyOptions.h/1.1/Thu Mar 23 06:03:00 2006//
+/CInfo.cpp/1.1/Thu Mar 23 06:03:00 2006//
+/CInfo.h/1.1/Thu Mar 23 06:03:00 2006//
+/CScreensLinks.cpp/1.3/Sun Jun 17 17:31:09 2007//
+/CScreensLinks.h/1.2/Thu Mar 23 06:03:00 2006//
+/LaunchUtil.cpp/1.5/Thu Mar 23 06:03:00 2006//
+/LaunchUtil.h/1.3/Thu Mar 23 06:03:00 2006//
+/Makefile.am/1.6/Thu Mar 23 06:03:00 2006/-ko/
+/Makefile.in/1.12/Sun Jun 17 17:31:09 2007/-ko/
+/launcher.cpp/1.14/Thu Mar 23 06:03:00 2006/-ko/
+/launcher.dsp/1.8/Thu Mar 23 06:03:00 2006/-kb/
+/launcher.rc/1.19/Thu Mar 23 06:03:00 2006/-ko/
+/resource.h/1.15/Thu Mar 23 06:03:00 2006/-ko/
+/synergy.ico/1.2/Thu Mar 23 06:03:00 2006/-kb/
+D

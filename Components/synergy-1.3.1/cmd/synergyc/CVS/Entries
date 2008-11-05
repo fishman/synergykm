@@ -1,0 +1,20 @@
+/CClientTaskBarReceiver.cpp/1.4/Thu Mar 23 06:03:00 2006//
+/CClientTaskBarReceiver.h/1.4/Thu Mar 23 06:03:00 2006//
+/CMSWindowsClientTaskBarReceiver.cpp/1.5/Thu Mar 23 06:03:00 2006//
+/CMSWindowsClientTaskBarReceiver.h/1.3/Mon Mar 29 06:07:51 2004//
+/COSXClientTaskBarReceiver.cpp/1.1/Thu May 27 04:53:48 2004//
+/COSXClientTaskBarReceiver.h/1.1/Thu May 27 04:53:48 2004//
+/CXWindowsClientTaskBarReceiver.cpp/1.2/Mon Mar 29 06:07:51 2004//
+/CXWindowsClientTaskBarReceiver.h/1.2/Mon Mar 29 06:07:51 2004//
+/Makefile.am/1.7/Sun Aug  7 18:43:59 2005/-ko/
+/Makefile.in/1.12/Sun Jun 17 17:31:09 2007/-ko/
+/resource.h/1.7/Thu Mar 23 06:03:00 2006/-ko/
+/synergyc.cpp/1.20/Thu Mar 23 06:03:00 2006/-ko/
+/synergyc.dsp/1.5/Thu Mar 23 06:03:00 2006/-kb/
+/synergyc.ico/1.2/Thu Mar 23 06:03:00 2006/-kb/
+/synergyc.rc/1.8/Thu Mar 23 06:03:00 2006/-ko/
+/tb_error.ico/1.2/Thu Mar 23 06:03:00 2006//
+/tb_idle.ico/1.2/Thu Mar 23 06:03:00 2006//
+/tb_run.ico/1.2/Thu Mar 23 06:03:00 2006//
+/tb_wait.ico/1.2/Thu Mar 23 06:03:00 2006//
+D
