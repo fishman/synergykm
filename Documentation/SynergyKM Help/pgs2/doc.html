@@ -1,0 +1,126 @@
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+	<title>SynergyKM Help</title>
+	<meta name="keywords" content=" ">
+	<meta name="description" content="An Introduction to SynergyKM.">
+	<link href="../sty/task_style.css" rel="stylesheet" media="all">
+</head>
+
+<body leftmargin="15" bgcolor="#ffffff"> 
+<div id="banner">
+	<a name="intro"></a>
+	<div id="machelp">
+		<a class="bread" href="../SynergyKM%20Help.html">SynergyKM Help</a>
+	</div>
+</div>
+
+<div id="mainbox">
+	<div id="caticon">
+		<img src="../gfx/icon32.png" alt="Synergy Icon" height="32" width="32" border="0">
+	</div>
+	
+	<div id="pagetitle">
+		<h1>SynergyKM Help</h1>
+	</div>
+
+	<p>
+		Synergy lets you easily share a single mouse and keyboard between multiple computers with different operating systems, each with its own display, without special hardware. It's intended for users with multiple computers on their desk since each system uses its own monitor(s).
+	</p>
+	<p>
+		Redirecting the mouse and keyboard is as simple as moving the mouse off the edge of your screen. Synergy also merges the clipboards of all the systems into one, allowing cut-and-paste between systems. Furthermore, it synchronizes screen savers so they all start and stop together.
+	</p>
+	<p>
+		SynergyKM is a mac os x preferences pane for the <a href="http://synergy2.sf.net">Synergy</a> project.
+	</p>
+	<p>
+		SynergyKM additionally provides the ability to switch easily between multiple configurations (locations). Also limited Rendezvous/Bonjour support for Mac OS X only environment is included. SynergyKM automatically starts as soon as the user logs in.
+	</p>
+	
+	<br>
+	<a name="requirements"></a><h3>System requirements</h3>
+	<ul>
+		<li>Two or more computers running Linux* (with X11/XTEST extension), Mac OS X (10.2 or higher) or Microsoft Windows 9x/NT/2000/XP.</li>
+		<li>A LAN (Home-/Office Network)</li>
+	</ul>
+	<p>
+		* Synergy has only been extensively tested on Linux and may not work completely or at all on other versions of Unix.
+	</p>
+	
+	<br>
+	<a name="start"></a><h2>Getting started</h2>	
+	<p>
+		First you have to decide which computer should be the synergy server, i.e. which keyboard and mouse you want to share with other synergy-enabled clients in your network.
+	</p>
+	
+	<br>
+	<a name="serversetup"></a><h3>Setup the server (Mac OS X)</h3>	
+	<div id="taskbox">
+	<ol>
+		<li>Open the SynergyKM preferences pane</li>
+		<li>Optionally create a new location to preserve your current settings</li>
+		<li>Select "Share my keyboard and mouse"</li>
+		<li>Open the "Server Configuration" tab</li>
+		<li>Add a screen with the name of your computer</li>
+		<li>Add screens for your client computers with their respective names</li>
+		<li>Click "Apply Now" when you are done</li>
+		<li>If synergy is not yet running, start it using the "Turn Synergy On" button in the "General" tab</li>
+	</ol>
+	</div>
+	
+	<br>
+	</a><a name="clientsetup"></a><h3>Setup a client (Mac OS X)</h3>	
+	<div id="taskbox">
+	<ol>
+		<li>Open the SynergyKM preferences pane</li>
+		<li>Optionally create a new location to preserve your current settings</li>
+		<li>Select "Connect to a shared keyboard and mouse"</li>
+		<li>Open the "Client Configuration" tab</li>
+		<li>Type the hostname or ip address of your server machine into the text field. If you want to use Rendezvous/Bonjour type in the actual screen name of the server instead of his address.</li>
+		<li>Click "Apply Now" when you are done</li>
+		<li>If synergy is not yet running, start it using the "Turn Synergy On" button in the "General" tab</li>
+	</ol>
+	</div>
+	
+	<br>
+	<a name="serversetup"></a><h3>Rendezvous/Bonjour support (Mac OS X)</h3>
+	
+	<p>
+		<strong>Note:</strong> Rendezvous/Bonjour support is not yet completed. the functionality may change in future releases.
+	</p>
+	<p>Using SynergyKM's Rendezvous/Bonjour function in a Mac OS X only environment features some advantages: different configurations/locations can be selected automatically and reconnects might be much faster.
+	</p>
+	<p>In the server setups you don't have to make any modifications. In the client setup you have to type in the actual screen name of the server instead of it's address. the address is resolved automatically at runtime.
+	</p>
+	
+	<br>
+	<a name="ts"></a><h2>Troubleshooting</h2>	
+	<p>
+		FIXME
+	</p>
+
+	<br>
+	<a name="tips"></a><h2>Tips & Tricks</h2>	
+	<p>
+		FIXME
+	</p>
+
+	<br>
+	<a name="authors"></a><h2>Contact</h2>
+	
+	<br>
+	<a name="authors"></a><h3>Authors</h3>
+	<ul>
+	<li><a href="mailto:lo@znerol.ch">Lorenz Schori</a></li>
+	<li><a href="mailto:bertrand@landryhetu.com">Bertrand Landry Hetu</a></li>
+	</ul>
+	
+	<br>
+	<a name="authors"></a><h3>Links</h3>
+	<ul>
+		<li>SynergyKM: <a href="http://software.landryhetu.com/synergy/">http://software.landryhetu.com/synergy/</a><br>Homepage of the SynergyKM project.</li>
+		<li>Synergy: <a href="http://synergy2.sourceforge.net/">http://synergy2.sourceforge.net/</a><br>Homepage of the original Synergy project with downloads for Microsoft Windows and UNIXes, more documentation and the mailing list.</li>
+</div>
+</body>
+</html>

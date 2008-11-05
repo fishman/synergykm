@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4C530E970909B212009B01FF /* BuildDistribution */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4C530EA20909B238009B01FF /* Build configuration list for PBXAggregateTarget "BuildDistribution" */;
+			buildPhases = (
+				4C530E960909B212009B01FF /* ShellScript */,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Test;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+				4C530E9D0909B21A009B01FF /* PBXTargetDependency */,
+				4C530E9B0909B21A009B01FF /* PBXTargetDependency */,
+			);
+			name = BuildDistribution;
+			productName = Test;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4C53093C0908F88E009B01FF /* MenuCracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D269F3202FB6DBC08A8013F /* MenuCracker.h */; };
+		4C53093E0908F88E009B01FF /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6D0DB7F402FC5C4408A8013F /* ReadMe.rtf */; };
+		4C5309400908F88E009B01FF /* MenuCracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D269F3402FB6DBC08A8013F /* MenuCracker.m */; };
+		4C5309420908F88E009B01FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		4C5309430908F88E009B01FF /* SystemUIPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D269F3002FB6D8D08A8013F /* SystemUIPlugin.framework */; };
+		4C53094F0908F88E009B01FF /* openUp.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D269F4C02FB752208A8013F /* openUp.c */; };
+		4C53095B0908F88E009B01FF /* version.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B66BF0375D2F808A8A864 /* version.m */; };
+		4C53095D0908F88E009B01FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		014CEA420018CDE011CA2923 /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OPTIMIZATION_CFLAGS = "-O0";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		014CEA430018CDE011CA2923 /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		4C530E9A0909B21A009B01FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C5309580908F88E009B01FF;
+			remoteInfo = version;
+		};
+		4C530E9C0909B21A009B01FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C53094C0908F88E009B01FF;
+			remoteInfo = OpenUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		4C53094A0908F88E009B01FF /* Info-MenuCracker.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-MenuCracker.plist"; sourceTree = "<group>"; };
+		4C53094B0908F88E009B01FF /* MenuCracker.menu */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuCracker.menu; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5309560908F88E009B01FF /* openUp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openUp; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5309630908F88E009B01FF /* version */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = version; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0DB7F402FC5C4408A8013F /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		6D269F3002FB6D8D08A8013F /* SystemUIPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemUIPlugin.framework; path = /System/Library/PrivateFrameworks/SystemUIPlugin.framework; sourceTree = "<absolute>"; };
+		6D269F3202FB6DBC08A8013F /* MenuCracker.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MenuCracker.h; sourceTree = "<group>"; };
+		6D269F3302FB6DBC08A8013F /* MenuCracker.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MenuCracker.icns; sourceTree = "<group>"; };
+		6D269F3402FB6DBC08A8013F /* MenuCracker.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MenuCracker.m; sourceTree = "<group>"; };
+		6D269F3902FB6EFC08A8013F /* SetFolderIcon */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = SetFolderIcon; sourceTree = "<group>"; };
+		6D269F4002FB73D408A8013F /* buildDistribution */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = buildDistribution; sourceTree = "<group>"; };
+		6D269F4102FB73D408A8013F /* createDiskImage */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.script.sh; path = createDiskImage; sourceTree = "<group>"; };
+		6D269F4C02FB752208A8013F /* openUp.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = openUp.c; sourceTree = "<group>"; };
+		6D5B66BF0375D2F808A8A864 /* version.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = version.m; path = Support/version.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5309410908F88E009B01FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5309420908F88E009B01FF /* Cocoa.framework in Frameworks */,
+				4C5309430908F88E009B01FF /* SystemUIPlugin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5309500908F88E009B01FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C53095C0908F88E009B01FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C53095D0908F88E009B01FF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* MenuCracker */ = {
+			isa = PBXGroup;
+			children = (
+				6D0DB7F402FC5C4408A8013F /* ReadMe.rtf */,
+				6D269F3202FB6DBC08A8013F /* MenuCracker.h */,
+				6D269F3402FB6DBC08A8013F /* MenuCracker.m */,
+				6D269F3302FB6DBC08A8013F /* MenuCracker.icns */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				6D269F3802FB6E9F08A8013F /* Support */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				4C53094A0908F88E009B01FF /* Info-MenuCracker.plist */,
+			);
+			name = MenuCracker;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				6D269F3002FB6D8D08A8013F /* SystemUIPlugin.framework */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C53094B0908F88E009B01FF /* MenuCracker.menu */,
+				4C5309560908F88E009B01FF /* openUp */,
+				4C5309630908F88E009B01FF /* version */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D269F3802FB6E9F08A8013F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6D269F3902FB6EFC08A8013F /* SetFolderIcon */,
+				6D269F4002FB73D408A8013F /* buildDistribution */,
+				6D269F4102FB73D408A8013F /* createDiskImage */,
+				6D269F4C02FB752208A8013F /* openUp.c */,
+				6D5B66BF0375D2F808A8A864 /* version.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C53093B0908F88E009B01FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C53093C0908F88E009B01FF /* MenuCracker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C53094D0908F88E009B01FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5309590908F88E009B01FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4C53093A0908F88E009B01FF /* MenuCracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5309460908F88E009B01FF /* Build configuration list for PBXNativeTarget "MenuCracker" */;
+			buildPhases = (
+				4C53093B0908F88E009B01FF /* Headers */,
+				4C53093D0908F88E009B01FF /* Resources */,
+				4C53093F0908F88E009B01FF /* Sources */,
+				4C5309410908F88E009B01FF /* Frameworks */,
+				4C5309440908F88E009B01FF /* Rez */,
+				4C5309450908F88E009B01FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 6;
+				DEBUGGING_SYMBOLS = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				INSTALL_PATH = /;
+				PRODUCT_NAME = MenuCracker;
+				USE_GCC3_PFE_SUPPORT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = menu;
+			};
+			dependencies = (
+			);
+			name = MenuCracker;
+			productInstallPath = /;
+			productName = MenuCracker;
+			productReference = 4C53094B0908F88E009B01FF /* MenuCracker.menu */;
+			productType = "com.apple.product-type.bundle";
+		};
+		4C53094C0908F88E009B01FF /* OpenUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5309520908F88E009B01FF /* Build configuration list for PBXNativeTarget "OpenUp" */;
+			buildPhases = (
+				4C53094D0908F88E009B01FF /* Headers */,
+				4C53094E0908F88E009B01FF /* Sources */,
+				4C5309500908F88E009B01FF /* Frameworks */,
+				4C5309510908F88E009B01FF /* Rez */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 6;
+				PRODUCT_NAME = openUp;
+				REZ_EXECUTABLE = YES;
+				USE_GCC3_PFE_SUPPORT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker_;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = OpenUp;
+			productInstallPath = /usr/local/bin;
+			productName = OpenUp;
+			productReference = 4C5309560908F88E009B01FF /* openUp */;
+			productType = "com.apple.product-type.tool";
+		};
+		4C5309580908F88E009B01FF /* version */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C53095F0908F88E009B01FF /* Build configuration list for PBXNativeTarget "version" */;
+			buildPhases = (
+				4C5309590908F88E009B01FF /* Headers */,
+				4C53095A0908F88E009B01FF /* Sources */,
+				4C53095C0908F88E009B01FF /* Frameworks */,
+				4C53095E0908F88E009B01FF /* Rez */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 6;
+				PRODUCT_NAME = version;
+				REZ_EXECUTABLE = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker_;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = version;
+			productInstallPath = /usr/local/bin;
+			productName = version;
+			productReference = 4C5309630908F88E009B01FF /* version */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4C5309250908F830009B01FF /* Build configuration list for PBXProject "MenuCracker" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				014CEA420018CDE011CA2923 /* Development */,
+				014CEA430018CDE011CA2923 /* Deployment */,
+			);
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* MenuCracker */;
+			projectDirPath = "";
+			targets = (
+				4C53093A0908F88E009B01FF /* MenuCracker */,
+				4C53094C0908F88E009B01FF /* OpenUp */,
+				4C5309580908F88E009B01FF /* version */,
+				4C530E970909B212009B01FF /* BuildDistribution */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C53093D0908F88E009B01FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C53093E0908F88E009B01FF /* ReadMe.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		4C5309440908F88E009B01FF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C5309510908F88E009B01FF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C53095E0908F88E009B01FF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C5309450908F88E009B01FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -e $TARGET_BUILD_DIR/MenuCracker.menu/Icon? ]; then\n\tchmod u+w $TARGET_BUILD_DIR/MenuCracker.menu/Icon?\nfi\n$SRCROOT/Support/SetFolderIcon $TARGET_BUILD_DIR/MenuCracker.menu MenuCracker.icns";
+		};
+		4C530E960909B212009B01FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n#ACTION=$1\n\n# Okay, it's all there, just bail now if installing\nif [ \"${ACTION}\" == \"install\" ]; then\n    exit 0; # Doh. I wanna do it from PB.\nfi\n\n# If we are cleaning, we can just stop here.\nif [ \"${ACTION}\" == \"clean\" ]; then\n    exit 0;\nfi\n\n#\n# Build the project in the symroot (no install)\n#\nxcodebuild build -target MenuCracker -configuration ${BUILD_STYLE} ENABLE_APPLE_JAM_OUTPUT_ANNOTATION=NO\n\n#\n# Find out the version number\n#\nVERSION=`${BUILT_PRODUCTS_DIR}/version ${BUILT_PRODUCTS_DIR}/MenuCracker.menu`\n\n# Create a directory to drop all the stuff inside\nTOP=${SYMROOT}/MenuCracker-${VERSION}\n\n# If this directory already exist, kill it\nif [ -d ${TOP} ]; then\n    chmod -R u+wx ${TOP}\n    rm -rf ${TOP}\nfi\n\n# Create it.\nmkdir -p ${TOP}\n\nchmod -R u+w ${OBJROOT}\n\n#\n# install in this directory\n#\n#xcodebuild install -target MenuCracker -configuration ${BUILD_STYLE}\n\ncp -R ${TARGET_BUILD_DIR}/MenuCracker.menu ${TOP}\n\n#\n# Make sure I can write in there for the time being\n#\nchmod -R u+w ${TOP}\n\n#\n# Copy the file to its final destination. \n#\n\n#\n# Remove all the turd files (you would think pbxbuild has done it for you, guesss again...)\n#\nfind ${TOP} -name pbdevelopment.plist -exec rm {} \\;\n\n#\n# Make sure the image is merged\n#\n${SRCROOT}/Support/SetFolderIcon ${TOP}/MenuCracker.menu ${SRCROOT}/MenuCracker.icns\n\n#\n# Copy doc at this time\n#\ncp ${TOP}/MenuCracker.menu/Contents/Resources/ReadMe.rtf ${TOP}\n\n\nchmod -R u-w ${TOP}\n\ncd ${TOP}/..\nsh ${SRCROOT}/Support/createDiskImage 5 MenuCracker-${VERSION} ${TOP}\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C53093F0908F88E009B01FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5309400908F88E009B01FF /* MenuCracker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C53094E0908F88E009B01FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C53094F0908F88E009B01FF /* openUp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C53095A0908F88E009B01FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C53095B0908F88E009B01FF /* version.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C530E9B0909B21A009B01FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C5309580908F88E009B01FF /* version */;
+			targetProxy = 4C530E9A0909B21A009B01FF /* PBXContainerItemProxy */;
+		};
+		4C530E9D0909B21A009B01FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C53094C0908F88E009B01FF /* OpenUp */;
+			targetProxy = 4C530E9C0909B21A009B01FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4C5309260908F830009B01FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Debug;
+		};
+		4C5309270908F830009B01FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Release;
+		};
+		4C5309470908F88E009B01FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 6;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				INFOPLIST_FILE = "Info-MenuCracker.plist";
+				PRODUCT_NAME = MenuCracker;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = menu;
+			};
+			name = Debug;
+		};
+		4C5309480908F88E009B01FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 6;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				INFOPLIST_FILE = "Info-MenuCracker.plist";
+				PRODUCT_NAME = MenuCracker;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = menu;
+			};
+			name = Release;
+		};
+		4C5309530908F88E009B01FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 6;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				PRODUCT_NAME = openUp;
+				REZ_EXECUTABLE = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker_;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4C5309540908F88E009B01FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = YES;
+				PRODUCT_NAME = openUp;
+				REZ_EXECUTABLE = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker_;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4C5309600908F88E009B01FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 6;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = version;
+				REZ_EXECUTABLE = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker_;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		4C5309610908F88E009B01FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = version;
+				REZ_EXECUTABLE = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = MenuCracker_;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4C530EA30909B238009B01FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Test;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		4C530EA40909B238009B01FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Test;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5309250908F830009B01FF /* Build configuration list for PBXProject "MenuCracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5309260908F830009B01FF /* Debug */,
+				4C5309270908F830009B01FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C5309460908F88E009B01FF /* Build configuration list for PBXNativeTarget "MenuCracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5309470908F88E009B01FF /* Debug */,
+				4C5309480908F88E009B01FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C5309520908F88E009B01FF /* Build configuration list for PBXNativeTarget "OpenUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5309530908F88E009B01FF /* Debug */,
+				4C5309540908F88E009B01FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C53095F0908F88E009B01FF /* Build configuration list for PBXNativeTarget "version" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5309600908F88E009B01FF /* Debug */,
+				4C5309610908F88E009B01FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C530EA20909B238009B01FF /* Build configuration list for PBXAggregateTarget "BuildDistribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C530EA30909B238009B01FF /* Debug */,
+				4C530EA40909B238009B01FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

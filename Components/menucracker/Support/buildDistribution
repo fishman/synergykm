@@ -1,0 +1,68 @@
+#!/bin/sh
+#
+#ACTION=$1
+
+# Okay, it's all there, just bail now if installing
+if [ "${ACTION}" == "install" ]; then
+    exit 0; # Doh. I wanna do it from PB.
+fi
+
+# If we are cleaning, we can just stop here.
+if [ "${ACTION}" == "clean" ]; then
+    exit 0;
+fi
+
+#
+# Build the project in the symroot (no install)
+#
+xcodebuild -target MenuCracker -configuration ${BUILD_STYLE} ENABLE_APPLE_JAM_OUTPUT_ANNOTATION=NO
+
+#
+# Find out the version number
+#
+VERSION=`${BUILT_PRODUCTS_DIR}/version ${SYMROOT}/MenuCracker.menu`
+
+# Create a directory to drop all the stuff inside
+TOP=${SYMROOT}/MenuCracker-${VERSION}
+
+# If this directory already exist, kill it
+if [ -d ${TOP} ]; then
+    chmod -R u+wx ${TOP}
+    rm -rf ${TOP}
+fi
+
+# Create it.
+mkdir -p ${TOP}
+
+chmod -R u+w ${OBJROOT}
+
+#
+# install in this directory
+#
+xcodebuild install -target MenuCracker -configuration ${BUILD_STYLE} DSTROOT=${TOP} ENABLE_APPLE_JAM_OUTPUT_ANNOTATION=NO
+
+#
+# Make sure I can write in there for the time being
+#
+chmod -R u+w ${TOP}
+
+#
+# Remove all the turd files (you would think pbxbuild has done it for you, guesss again...)
+#
+find ${TOP} -name pbdevelopment.plist -exec rm {} \;
+
+#
+# Make sure the image is merged
+#
+${SRCROOT}/Support/SetFolderIcon ${TOP}/MenuCracker.menu ${SRCROOT}/MenuCracker.icns
+
+#
+# Copy doc at this time
+#
+cp ${TOP}/MenuCracker.menu/Contents/Resources/ReadMe.rtf ${TOP}
+
+
+chmod -R u-w ${TOP}
+
+cd ${TOP}/..
+sh ${SRCROOT}/Support/createDiskImage 5 MenuCracker-${VERSION} ${TOP}

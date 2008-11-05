@@ -1,0 +1,182 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            CLASS = NSPreferencePane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                "_firstKeyView" = id; 
+                "_initialKeyView" = id; 
+                "_lastKeyView" = id; 
+                "_window" = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {addAlias = id; deleteAlias = id; }; 
+            CLASS = SPAliasesListController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                addAliasBtn = NSButton; 
+                deleteAliasBtn = NSButton; 
+                screenNameLabel = NSTextField; 
+                tableView = NSTableView; 
+            }; 
+            SUPERCLASS = SPScreenEntryBaseSheetController; 
+        }, 
+        {
+            ACTIONS = {cancel = id; ok = id; }; 
+            CLASS = SPBaseSheetController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {synergyPane = SynergyPane; window = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {serverAddressChanged = id; }; 
+            CLASS = SPClientTabController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                clientPane = NSView; 
+                configurationTab = NSTabViewItem; 
+                screenNameField = NSTextField; 
+                serverAddressField = NSTextField; 
+                synergyPane = SynergyPane; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {deleteLocation = id; duplicateLocation = id; ok = id; renameLocation = id; }; 
+            CLASS = SPEditLocationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                deleteBtn = NSButton; 
+                duplicateBtn = NSButton; 
+                renameBtn = NSButton; 
+                synergyPane = SynergyPane; 
+                tableView = NSTableView; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {cancel = id; ok = id; }; 
+            CLASS = SPNewLocationController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                errorField = NSTextField; 
+                nameField = NSTextField; 
+                synergyPane = SynergyPane; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = SPScreenEntryBaseSheetController; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = SPBaseSheetController; 
+        }, 
+        {
+            CLASS = SPScreenOptionsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                capsLockBtn = NSButton; 
+                commandPopupBtn = NSPopUpButton; 
+                controlPopupBtn = NSPopUpButton; 
+                numLockBtn = NSButton; 
+                optionPopupBtn = NSPopUpButton; 
+                screenNameLabel = NSTextField; 
+                scrollLockBtn = NSButton; 
+                shiftPopupBtn = NSPopUpButton; 
+            }; 
+            SUPERCLASS = SPScreenEntryBaseSheetController; 
+        }, 
+        {
+            CLASS = SPScreenView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {datasource = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {
+                enableClientChecksBtnChanged = id; 
+                switchAfterDelayBtnChanged = id; 
+                switchOnDoubleTapBtnChanged = id; 
+            }; 
+            CLASS = SPServerOptionsController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                enableClientChecksBtn = NSButton; 
+                enableClientChecksTextField = NSTextField; 
+                port = NSTextField; 
+                screenName = NSTextField; 
+                switchAfterDelayBtn = NSButton; 
+                switchAfterDelayTextField = NSTextField; 
+                switchOnDoubleTapBtn = NSButton; 
+                switchOnDoubleTapTextField = NSTextField; 
+                synchronizeScreenSavers = NSButton; 
+                useRelativeMouseMoves = NSButton; 
+            }; 
+            SUPERCLASS = SPBaseSheetController; 
+        }, 
+        {
+            ACTIONS = {add = id; aliases = id; remove = id; screenOptions = id; serverOptions = id; }; 
+            CLASS = SPServerTabController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                aliasListController = SPAliasesListController; 
+                aliasesBtn = NSButton; 
+                configurationTab = NSTabViewItem; 
+                modifiersBtn = NSButton; 
+                optionsBtn = NSButton; 
+                removeBtn = NSButton; 
+                screenNameField = NSTextField; 
+                screenNameLabel = NSTextField; 
+                screenOptionsController = SPScreenOptionsController; 
+                screenView = SPScreenView; 
+                serverOptionsController = SPServerOptionsController; 
+                serverPane = NSView; 
+                synergyPane = SynergyPane; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = SPTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {
+            ACTIONS = {
+                apply = id; 
+                configurationTypeToggled = id; 
+                launchAtLoginToggled = id; 
+                locationPopupChanged = id; 
+                loggingLevelPopupChanged = id; 
+                menuVisibilityToggled = id; 
+                openLogFile = id; 
+                rendezvousToggled = id; 
+            }; 
+            CLASS = SynergyPane; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                applyBtn = NSButton; 
+                clientTabController = SPClientTabController; 
+                clientVersionInfo = NSTextField; 
+                configTypeRadioBtn = NSMatrix; 
+                editLocationsController = SPEditLocationController; 
+                launchBtn = NSButton; 
+                locationPopup = NSPopUpButton; 
+                logLevelPopup = NSPopUpButton; 
+                menuVisibilityBtn = NSButton; 
+                newLocationController = SPNewLocationController; 
+                rendezvousBtn = NSButton; 
+                serverTabController = SPServerTabController; 
+                serverVersionInfo = NSTextField; 
+                synergyStatus = NSTextField; 
+            }; 
+            SUPERCLASS = NSPreferencePane; 
+        }
+    ); 
+    IBVersion = 1; 
+}

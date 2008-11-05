@@ -1,0 +1,8 @@
+client disconnects
+if client connects using a name found in the alias list of the server, the
+server does not detect if the client disconnects. status is not updated in this
+case.
+
+rendezvous/boinjour
+bonjour is not handled properly. if configuration entries are modified, the 
+server will not reread them.

@@ -1,0 +1,1839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		CA05914B089C2EB300A3901F /* Export Helpbook */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CA059151089C2EC200A3901F /* Build configuration list for PBXAggregateTarget "Export Helpbook" */;
+			buildPhases = (
+				CA05914A089C2EB300A3901F /* ShellScript */,
+			);
+			buildSettings = {
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Helpbook;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = "Export Helpbook";
+			productName = Helpbook;
+		};
+		CA6C745B083B9D8B0006D65C /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CA3CDB72087AF15F00A4B356 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			buildSettings = {
+				PRODUCT_NAME = All;
+			};
+			dependencies = (
+				CA6C745F083B9DA20006D65C /* PBXTargetDependency */,
+				CA6C7461083B9DA20006D65C /* PBXTargetDependency */,
+				CA5B52FA083E9FB70071F3C7 /* PBXTargetDependency */,
+				CA05926A089C346300A3901F /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXAppleScriptBuildPhase section */
+		CA05924A089C32E900A3901F /* AppleScript */ = {
+			isa = PBXAppleScriptBuildPhase;
+			buildActionMask = 2147483647;
+			contextName = "";
+			files = (
+				CA05924E089C330700A3901F /* installer.applescript in AppleScript */,
+			);
+			isSharedContext = 0;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXAppleScriptBuildPhase section */
+
+/* Begin PBXBuildFile section */
+		4C4C6DF309A1CA5C00B694DC /* MenuCracker.menu in Resources */ = {isa = PBXBuildFile; fileRef = CA5B53AE083EA7E40071F3C7 /* MenuCracker.menu */; };
+		4C80E0EC089617E800E14B0E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C73A6083B98830006D65C /* SystemConfiguration.framework */; };
+		CA059182089C310400A3901F /* quitsynergyd.m in Sources */ = {isa = PBXBuildFile; fileRef = CA059181089C30FA00A3901F /* quitsynergyd.m */; };
+		CA05922B089C325F00A3901F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA05922A089C325F00A3901F /* CoreFoundation.framework */; };
+		CA059245089C32DF00A3901F /* quitsynergyd in Resources */ = {isa = PBXBuildFile; fileRef = CA05913E089C2E6B00A3901F /* quitsynergyd */; };
+		CA05924E089C330700A3901F /* installer.applescript in AppleScript */ = {isa = PBXBuildFile; fileRef = CA05917F089C30FA00A3901F /* installer.applescript */; settings = {ATTRIBUTES = (Debug, ); }; };
+		CA059252089C332100A3901F /* installer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA059180089C30FA00A3901F /* installer.m */; };
+		CA059255089C333300A3901F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C739F083B985E0006D65C /* Cocoa.framework */; };
+		CA059257089C334D00A3901F /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA059256089C334D00A3901F /* AppleScriptKit.framework */; };
+		CA05925E089C337E00A3901F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA059178089C30FA00A3901F /* InfoPlist.strings */; };
+		CA05925F089C337E00A3901F /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = CA05917A089C30FA00A3901F /* MainMenu.nib */; };
+		CA3C3B1D087D34D3007161A1 /* StatusWarning_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA3C3B1B087D34D3007161A1 /* StatusWarning_P.tif */; };
+		CA3C3B1E087D34D3007161A1 /* StatusWarning.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA3C3B1C087D34D3007161A1 /* StatusWarning.tif */; };
+		CA5B4F25083DF9F70071F3C7 /* StatusConnected.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7349083B969C0006D65C /* StatusConnected.tif */; };
+		CA5B4F26083DF9F70071F3C7 /* StatusConnected_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C734A083B969C0006D65C /* StatusConnected_P.tif */; };
+		CA5B4F27083DF9F80071F3C7 /* StatusConnecting_1.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C734B083B969C0006D65C /* StatusConnecting_1.tif */; };
+		CA5B4F29083DF9FA0071F3C7 /* StatusConnecting_2.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C734D083B969C0006D65C /* StatusConnecting_2.tif */; };
+		CA5B4F2A083DF9FA0071F3C7 /* StatusConnecting_1_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C734C083B969C0006D65C /* StatusConnecting_1_P.tif */; };
+		CA5B4F2B083DF9FB0071F3C7 /* StatusConnecting_2_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C734E083B969C0006D65C /* StatusConnecting_2_P.tif */; };
+		CA5B4F2C083DF9FC0071F3C7 /* StatusDisconnected.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C734F083B969C0006D65C /* StatusDisconnected.tif */; };
+		CA5B4F2D083DF9FD0071F3C7 /* StatusDisconnected_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7350083B969C0006D65C /* StatusDisconnected_P.tif */; };
+		CA5B4F2E083DF9FD0071F3C7 /* StatusDiscovering_1.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7351083B969C0006D65C /* StatusDiscovering_1.tif */; };
+		CA5B4F2F083DF9FE0071F3C7 /* StatusDiscovering_1_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7352083B969C0006D65C /* StatusDiscovering_1_P.tif */; };
+		CA5B4F30083DF9FF0071F3C7 /* StatusDiscovering_2.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7353083B969C0006D65C /* StatusDiscovering_2.tif */; };
+		CA5B4F31083DFA000071F3C7 /* StatusDiscovering_2_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7354083B969C0006D65C /* StatusDiscovering_2_P.tif */; };
+		CA5B4F32083DFA010071F3C7 /* StatusDiscovering_3.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7355083B969C0006D65C /* StatusDiscovering_3.tif */; };
+		CA5B4F33083DFA010071F3C7 /* StatusDiscovering_3_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7356083B969C0006D65C /* StatusDiscovering_3_P.tif */; };
+		CA5B4F34083DFA020071F3C7 /* StatusError.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7357083B969C0006D65C /* StatusError.tif */; };
+		CA5B4F35083DFA020071F3C7 /* StatusError_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7358083B969C0006D65C /* StatusError_P.tif */; };
+		CA5B4F36083DFA030071F3C7 /* StatusIdle.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7359083B969C0006D65C /* StatusIdle.tif */; };
+		CA5B4F37083DFA050071F3C7 /* StatusIdle_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C735A083B969C0006D65C /* StatusIdle_P.tif */; };
+		CA5B4F38083DFA050071F3C7 /* StatusInvalid.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C735B083B969C0006D65C /* StatusInvalid.tif */; };
+		CA5B4F39083DFA050071F3C7 /* StatusInvalid_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C735C083B969C0006D65C /* StatusInvalid_P.tif */; };
+		CA5B4F3A083DFA060071F3C7 /* StatusRunning.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C735D083B969C0006D65C /* StatusRunning.tif */; };
+		CA5B4F3C083DFA070071F3C7 /* StatusRunning_P.tif in Resources */ = {isa = PBXBuildFile; fileRef = CA6C735E083B969C0006D65C /* StatusRunning_P.tif */; };
+		CA5B4F4F083DFB700071F3C7 /* SMStatusMenuExtra.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B4F4E083DFB700071F3C7 /* SMStatusMenuExtra.m */; };
+		CA5B4FA1083DFD5C0071F3C7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C739F083B985E0006D65C /* Cocoa.framework */; };
+		CA5B4FAD083DFE310071F3C7 /* SystemUIPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5B4FAC083DFE310071F3C7 /* SystemUIPlugin.framework */; };
+		CA5B506A083E08570071F3C7 /* SPProcessInfoAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C744A083B9CE10006D65C /* SPProcessInfoAdditions.m */; };
+		CA5B506B083E08590071F3C7 /* SDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7448083B9CE10006D65C /* SDConstants.m */; };
+		CA5B50A5083E0D490071F3C7 /* SKMServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B50A4083E0D490071F3C7 /* SKMServerController.m */; };
+		CA5B5301083E9FD70071F3C7 /* SynergyKM.menu in Resources */ = {isa = PBXBuildFile; fileRef = CA5B4F0B083DF8D00071F3C7 /* SynergyKM.menu */; };
+		CA5B5375083EA69E0071F3C7 /* SKMServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B50A4083E0D490071F3C7 /* SKMServerController.m */; };
+		CA5B538B083EA72B0071F3C7 /* SKMMenuExtraController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5B538A083EA72B0071F3C7 /* SKMMenuExtraController.m */; };
+		CA6C7381083B97720006D65C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA6C737D083B97720006D65C /* InfoPlist.strings */; };
+		CA6C7385083B979B0006D65C /* Synergyd.nib in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7383083B979B0006D65C /* Synergyd.nib */; };
+		CA6C7388083B97E60006D65C /* SDAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7300083B969B0006D65C /* SDAppController.m */; };
+		CA6C7389083B97E70006D65C /* SDAutomaticConfigurationAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7302083B969B0006D65C /* SDAutomaticConfigurationAgent.m */; };
+		CA6C738A083B97E70006D65C /* SDConfigurationAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7304083B969B0006D65C /* SDConfigurationAgent.m */; };
+		CA6C738B083B97E80006D65C /* SDConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7306083B969B0006D65C /* SDConfigurationManager.m */; };
+		CA6C738C083B97E90006D65C /* SDStaticConfigurationAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7308083B969B0006D65C /* SDStaticConfigurationAgent.m */; };
+		CA6C738D083B97E90006D65C /* SDStatusUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C730A083B969B0006D65C /* SDStatusUpdater.m */; };
+		CA6C738E083B97E90006D65C /* SDSynergyClientWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C730C083B969B0006D65C /* SDSynergyClientWrapper.m */; };
+		CA6C738F083B97EA0006D65C /* SDSynergyServerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C730E083B969B0006D65C /* SDSynergyServerWrapper.m */; };
+		CA6C7390083B97EB0006D65C /* SDSynergyWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7310083B969B0006D65C /* SDSynergyWrapper.m */; };
+		CA6C7391083B97EB0006D65C /* SDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7312083B969B0006D65C /* SDUtilities.m */; };
+		CA6C7392083B97EC0006D65C /* Synergyd.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7313083B969B0006D65C /* Synergyd.m */; };
+		CA6C73A0083B985E0006D65C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C739F083B985E0006D65C /* Cocoa.framework */; };
+		CA6C73A7083B98830006D65C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C73A6083B98830006D65C /* SystemConfiguration.framework */; };
+		CA6C741C083B9C560006D65C /* SPScreenEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C731B083B969B0006D65C /* SPScreenEntry.mm */; };
+		CA6C741D083B9C570006D65C /* SPServerTabController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C732E083B969C0006D65C /* SPServerTabController.mm */; };
+		CA6C741E083B9C570006D65C /* SPAliasesListController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C731E083B969B0006D65C /* SPAliasesListController.mm */; };
+		CA6C741F083B9C570006D65C /* SPBaseSheetController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7320083B969B0006D65C /* SPBaseSheetController.mm */; };
+		CA6C7420083B9C580006D65C /* SPConfigEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7317083B969B0006D65C /* SPConfigEntry.mm */; };
+		CA6C7421083B9C580006D65C /* SPEditLocationController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7324083B969B0006D65C /* SPEditLocationController.mm */; };
+		CA6C7422083B9C590006D65C /* SPBezierPath+RoundRect.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C733B083B969C0006D65C /* SPBezierPath+RoundRect.m */; };
+		CA6C7423083B9C590006D65C /* SPTableView.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7342083B969C0006D65C /* SPTableView.mm */; };
+		CA6C7424083B9C5A0006D65C /* SPScreenEntryBaseSheetController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7328083B969B0006D65C /* SPScreenEntryBaseSheetController.mm */; };
+		CA6C7425083B9C5B0006D65C /* SPConfigurationManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7319083B969B0006D65C /* SPConfigurationManager.mm */; };
+		CA6C7426083B9C5B0006D65C /* SPScreenOptionsController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C732A083B969C0006D65C /* SPScreenOptionsController.mm */; };
+		CA6C7427083B9C5C0006D65C /* SynergyPref.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7336083B969C0006D65C /* SynergyPref.tiff */; };
+		CA6C7428083B9C5C0006D65C /* SPStringAdditions.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C733D083B969C0006D65C /* SPStringAdditions.mm */; };
+		CA6C742B083B9C5E0006D65C /* SPScreenView.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7340083B969C0006D65C /* SPScreenView.mm */; };
+		CA6C742C083B9C5E0006D65C /* SPNewLocationController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7326083B969B0006D65C /* SPNewLocationController.mm */; };
+		CA6C742D083B9C5F0006D65C /* SPClientTabController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7322083B969B0006D65C /* SPClientTabController.mm */; };
+		CA6C742E083B9C5F0006D65C /* screen.tiff in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7335083B969C0006D65C /* screen.tiff */; };
+		CA6C742F083B9C600006D65C /* SPServerOptionsController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C732C083B969C0006D65C /* SPServerOptionsController.mm */; };
+		CA6C7430083B9C620006D65C /* SynergyPane.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7338083B969C0006D65C /* SynergyPane.mm */; };
+		CA6C7431083B9C6E0006D65C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7416083B9C1D0006D65C /* InfoPlist.strings */; };
+		CA6C7432083B9C6E0006D65C /* SynergyPane.nib in Resources */ = {isa = PBXBuildFile; fileRef = CA6C741A083B9C230006D65C /* SynergyPane.nib */; };
+		CA6C744D083B9CE10006D65C /* SDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7448083B9CE10006D65C /* SDConstants.m */; };
+		CA6C744E083B9CE10006D65C /* SPProcessInfoAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C744A083B9CE10006D65C /* SPProcessInfoAdditions.m */; };
+		CA6C7457083B9D530006D65C /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C73A3083B986D0006D65C /* PreferencePanes.framework */; };
+		CA6C7458083B9D540006D65C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA6C739F083B985E0006D65C /* Cocoa.framework */; };
+		CA6C7466083B9DB90006D65C /* Synergyd.app in Resources */ = {isa = PBXBuildFile; fileRef = CA6C7372083B96D50006D65C /* Synergyd.app */; };
+		CA6C747C083B9FA60006D65C /* LCSStdIOTaskWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7446083B9CE10006D65C /* LCSStdIOTaskWrapper.m */; };
+		CA6C747D083B9FA90006D65C /* SDConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C7448083B9CE10006D65C /* SDConstants.m */; };
+		CA6C747E083B9FA90006D65C /* SPProcessInfoAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C744A083B9CE10006D65C /* SPProcessInfoAdditions.m */; };
+		CA6D7001087B09950086E3BB /* synergyc in Resources */ = {isa = PBXBuildFile; fileRef = CA6D6FFF087B09940086E3BB /* synergyc */; };
+		CA6D7002087B09950086E3BB /* synergys in Resources */ = {isa = PBXBuildFile; fileRef = CA6D7000087B09950086E3BB /* synergys */; };
+		CA97F109083F872C00F8650A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA97F107083F872B00F8650A /* InfoPlist.strings */; };
+		CAA598730840DC1F0076CB83 /* Synergy.icns in Resources */ = {isa = PBXBuildFile; fileRef = CAA598720840DC1F0076CB83 /* Synergy.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		CA6C72E9083B926D0006D65C /* Development */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Development;
+		};
+		CA6C72EA083B926D0006D65C /* Deployment */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+			};
+			name = Deployment;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		4C39E86A0924C78C009BD9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C53094B0908F88E009B01FF;
+			remoteInfo = MenuCracker;
+		};
+		4C39E86C0924C78C009BD9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C5309560908F88E009B01FF;
+			remoteInfo = OpenUp;
+		};
+		4C39E86E0924C78C009BD9B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C5309630908F88E009B01FF;
+			remoteInfo = version;
+		};
+		4C4C6DF109A1CA5100B694DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C53093A0908F88E009B01FF;
+			remoteInfo = MenuCracker;
+		};
+		CA059242089C32D800A3901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA05913D089C2E6B00A3901F;
+			remoteInfo = quitsynergyd;
+		};
+		CA059263089C341D00A3901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA05914B089C2EB300A3901F;
+			remoteInfo = "Export Helpbook";
+		};
+		CA059269089C346300A3901F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA059236089C32C900A3901F;
+			remoteInfo = "SynergyKM Installer";
+		};
+		CA5B52F9083E9FB70071F3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5B4F0A083DF8D00071F3C7;
+			remoteInfo = StatusMenu;
+		};
+		CA5B52FB083E9FC90071F3C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5B4F0A083DF8D00071F3C7;
+			remoteInfo = StatusMenu;
+		};
+		CA6C745E083B9DA20006D65C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6C7371083B96D50006D65C;
+			remoteInfo = Daemon;
+		};
+		CA6C7460083B9DA20006D65C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6C73ED083B9AE60006D65C;
+			remoteInfo = Prefpane;
+		};
+		CA6C7462083B9DAD0006D65C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA6C72EB083B926D0006D65C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA6C7371083B96D50006D65C;
+			remoteInfo = Daemon;
+		};
+		CA6D6FF2087B06AC0086E3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CB43913063E497700969041;
+			remoteInfo = synergyc;
+		};
+		CA6D6FF4087B06AC0086E3BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C537F0C064E286700D3815C;
+			remoteInfo = synergys;
+		};
+		CAACFC67087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB437B5063E443800969041;
+			remoteInfo = arch;
+		};
+		CAACFC69087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C5E868D0648C2ED003C637B;
+			remoteInfo = common;
+		};
+		CAACFC6B087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB437D1063E44C200969041;
+			remoteInfo = base;
+		};
+		CAACFC6D087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43801063E45F200969041;
+			remoteInfo = mt;
+		};
+		CAACFC6F087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43824063E46AB00969041;
+			remoteInfo = io;
+		};
+		CAACFC71087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43848063E475800969041;
+			remoteInfo = net;
+		};
+		CAACFC73087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB4386E063E47F800969041;
+			remoteInfo = synergy;
+		};
+		CAACFC75087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB438B1063E488600969041;
+			remoteInfo = platform;
+		};
+		CAACFC77087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43778063E406A00969041;
+			remoteInfo = client;
+		};
+		CAACFC79087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C537F31064E29F800D3815C;
+			remoteInfo = server;
+		};
+		CAACFC7B087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43914063E497700969041;
+			remoteInfo = synergyc;
+		};
+		CAACFC7D087B04FE005200AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C537F0D064E286700D3815C;
+			remoteInfo = synergys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MenuCracker.xcodeproj; path = Components/menucracker/MenuCracker.xcodeproj; sourceTree = "<group>"; };
+		CA05913E089C2E6B00A3901F /* quitsynergyd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = quitsynergyd; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA059179089C30FA00A3901F /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
+		CA05917B089C30FA00A3901F /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = MainMenu.nib; sourceTree = "<group>"; };
+		CA05917E089C30FA00A3901F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA05917F089C30FA00A3901F /* installer.applescript */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.applescript; path = installer.applescript; sourceTree = "<group>"; };
+		CA059180089C30FA00A3901F /* installer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = installer.m; sourceTree = "<group>"; };
+		CA059181089C30FA00A3901F /* quitsynergyd.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = quitsynergyd.m; sourceTree = "<group>"; };
+		CA05922A089C325F00A3901F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		CA059237089C32C900A3901F /* SynergyKM Installer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SynergyKM Installer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA059256089C334D00A3901F /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = /System/Library/Frameworks/AppleScriptKit.framework; sourceTree = "<absolute>"; };
+		CA35EBFC087C4F2600369580 /* BUGS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BUGS; sourceTree = "<group>"; };
+		CA3C3B1B087D34D3007161A1 /* StatusWarning_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusWarning_P.tif; sourceTree = "<group>"; };
+		CA3C3B1C087D34D3007161A1 /* StatusWarning.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusWarning.tif; sourceTree = "<group>"; };
+		CA5B4F0B083DF8D00071F3C7 /* SynergyKM.menu */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynergyKM.menu; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5B4F12083DF9350071F3C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5B4F4D083DFB700071F3C7 /* SMStatusMenuExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStatusMenuExtra.h; sourceTree = "<group>"; };
+		CA5B4F4E083DFB700071F3C7 /* SMStatusMenuExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStatusMenuExtra.m; sourceTree = "<group>"; };
+		CA5B4FAC083DFE310071F3C7 /* SystemUIPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemUIPlugin.framework; path = /System/Library/PrivateFrameworks/SystemUIPlugin.framework; sourceTree = "<absolute>"; };
+		CA5B50A3083E0D490071F3C7 /* SKMServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMServerController.h; sourceTree = "<group>"; };
+		CA5B50A4083E0D490071F3C7 /* SKMServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMServerController.m; sourceTree = "<group>"; };
+		CA5B5389083EA72B0071F3C7 /* SKMMenuExtraController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SKMMenuExtraController.h; sourceTree = "<group>"; };
+		CA5B538A083EA72B0071F3C7 /* SKMMenuExtraController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SKMMenuExtraController.m; sourceTree = "<group>"; };
+		CA5B53AE083EA7E40071F3C7 /* MenuCracker.menu */ = {isa = PBXFileReference; explicitFileType = wrapper; name = MenuCracker.menu; path = ../menucracker/build/Release/MenuCracker.menu; sourceTree = "<group>"; };
+		CA6C72FD083B969B0006D65C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6C72FF083B969B0006D65C /* SDAppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDAppController.h; sourceTree = "<group>"; };
+		CA6C7300083B969B0006D65C /* SDAppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDAppController.m; sourceTree = "<group>"; };
+		CA6C7301083B969B0006D65C /* SDAutomaticConfigurationAgent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDAutomaticConfigurationAgent.h; sourceTree = "<group>"; };
+		CA6C7302083B969B0006D65C /* SDAutomaticConfigurationAgent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDAutomaticConfigurationAgent.m; sourceTree = "<group>"; };
+		CA6C7303083B969B0006D65C /* SDConfigurationAgent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDConfigurationAgent.h; sourceTree = "<group>"; };
+		CA6C7304083B969B0006D65C /* SDConfigurationAgent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDConfigurationAgent.m; sourceTree = "<group>"; };
+		CA6C7305083B969B0006D65C /* SDConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDConfigurationManager.h; sourceTree = "<group>"; };
+		CA6C7306083B969B0006D65C /* SDConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDConfigurationManager.m; sourceTree = "<group>"; };
+		CA6C7307083B969B0006D65C /* SDStaticConfigurationAgent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDStaticConfigurationAgent.h; sourceTree = "<group>"; };
+		CA6C7308083B969B0006D65C /* SDStaticConfigurationAgent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDStaticConfigurationAgent.m; sourceTree = "<group>"; };
+		CA6C7309083B969B0006D65C /* SDStatusUpdater.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDStatusUpdater.h; sourceTree = "<group>"; };
+		CA6C730A083B969B0006D65C /* SDStatusUpdater.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDStatusUpdater.m; sourceTree = "<group>"; };
+		CA6C730B083B969B0006D65C /* SDSynergyClientWrapper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDSynergyClientWrapper.h; sourceTree = "<group>"; };
+		CA6C730C083B969B0006D65C /* SDSynergyClientWrapper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDSynergyClientWrapper.m; sourceTree = "<group>"; };
+		CA6C730D083B969B0006D65C /* SDSynergyServerWrapper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDSynergyServerWrapper.h; sourceTree = "<group>"; };
+		CA6C730E083B969B0006D65C /* SDSynergyServerWrapper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDSynergyServerWrapper.m; sourceTree = "<group>"; };
+		CA6C730F083B969B0006D65C /* SDSynergyWrapper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDSynergyWrapper.h; sourceTree = "<group>"; };
+		CA6C7310083B969B0006D65C /* SDSynergyWrapper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDSynergyWrapper.m; sourceTree = "<group>"; };
+		CA6C7311083B969B0006D65C /* SDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDUtilities.h; sourceTree = "<group>"; };
+		CA6C7312083B969B0006D65C /* SDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDUtilities.m; sourceTree = "<group>"; };
+		CA6C7313083B969B0006D65C /* Synergyd.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = Synergyd.m; sourceTree = "<group>"; };
+		CA6C7316083B969B0006D65C /* SPConfigEntry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPConfigEntry.h; sourceTree = "<group>"; };
+		CA6C7317083B969B0006D65C /* SPConfigEntry.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPConfigEntry.mm; sourceTree = "<group>"; };
+		CA6C7318083B969B0006D65C /* SPConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPConfigurationManager.h; sourceTree = "<group>"; };
+		CA6C7319083B969B0006D65C /* SPConfigurationManager.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPConfigurationManager.mm; sourceTree = "<group>"; };
+		CA6C731A083B969B0006D65C /* SPScreenEntry.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPScreenEntry.h; sourceTree = "<group>"; };
+		CA6C731B083B969B0006D65C /* SPScreenEntry.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPScreenEntry.mm; sourceTree = "<group>"; };
+		CA6C731D083B969B0006D65C /* SPAliasesListController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPAliasesListController.h; sourceTree = "<group>"; };
+		CA6C731E083B969B0006D65C /* SPAliasesListController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPAliasesListController.mm; sourceTree = "<group>"; };
+		CA6C731F083B969B0006D65C /* SPBaseSheetController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPBaseSheetController.h; sourceTree = "<group>"; };
+		CA6C7320083B969B0006D65C /* SPBaseSheetController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPBaseSheetController.mm; sourceTree = "<group>"; };
+		CA6C7321083B969B0006D65C /* SPClientTabController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPClientTabController.h; sourceTree = "<group>"; };
+		CA6C7322083B969B0006D65C /* SPClientTabController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPClientTabController.mm; sourceTree = "<group>"; };
+		CA6C7323083B969B0006D65C /* SPEditLocationController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPEditLocationController.h; sourceTree = "<group>"; };
+		CA6C7324083B969B0006D65C /* SPEditLocationController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPEditLocationController.mm; sourceTree = "<group>"; };
+		CA6C7325083B969B0006D65C /* SPNewLocationController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPNewLocationController.h; sourceTree = "<group>"; };
+		CA6C7326083B969B0006D65C /* SPNewLocationController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPNewLocationController.mm; sourceTree = "<group>"; };
+		CA6C7327083B969B0006D65C /* SPScreenEntryBaseSheetController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPScreenEntryBaseSheetController.h; sourceTree = "<group>"; };
+		CA6C7328083B969B0006D65C /* SPScreenEntryBaseSheetController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPScreenEntryBaseSheetController.mm; sourceTree = "<group>"; };
+		CA6C7329083B969C0006D65C /* SPScreenOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPScreenOptionsController.h; sourceTree = "<group>"; };
+		CA6C732A083B969C0006D65C /* SPScreenOptionsController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPScreenOptionsController.mm; sourceTree = "<group>"; };
+		CA6C732B083B969C0006D65C /* SPServerOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPServerOptionsController.h; sourceTree = "<group>"; };
+		CA6C732C083B969C0006D65C /* SPServerOptionsController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPServerOptionsController.mm; sourceTree = "<group>"; };
+		CA6C732D083B969C0006D65C /* SPServerTabController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPServerTabController.h; sourceTree = "<group>"; };
+		CA6C732E083B969C0006D65C /* SPServerTabController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPServerTabController.mm; sourceTree = "<group>"; };
+		CA6C7331083B969C0006D65C /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA6C7333083B969C0006D65C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SynergyPane.nib; sourceTree = "<group>"; };
+		CA6C7334083B969C0006D65C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6C7335083B969C0006D65C /* screen.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = screen.tiff; sourceTree = "<group>"; };
+		CA6C7336083B969C0006D65C /* SynergyPref.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SynergyPref.tiff; sourceTree = "<group>"; };
+		CA6C7337083B969C0006D65C /* SynergyPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SynergyPane.h; sourceTree = "<group>"; };
+		CA6C7338083B969C0006D65C /* SynergyPane.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SynergyPane.mm; sourceTree = "<group>"; };
+		CA6C733A083B969C0006D65C /* SPBezierPath+RoundRect.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "SPBezierPath+RoundRect.h"; sourceTree = "<group>"; };
+		CA6C733B083B969C0006D65C /* SPBezierPath+RoundRect.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "SPBezierPath+RoundRect.m"; sourceTree = "<group>"; };
+		CA6C733C083B969C0006D65C /* SPStringAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPStringAdditions.h; sourceTree = "<group>"; };
+		CA6C733D083B969C0006D65C /* SPStringAdditions.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPStringAdditions.mm; sourceTree = "<group>"; };
+		CA6C733F083B969C0006D65C /* SPScreenView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPScreenView.h; sourceTree = "<group>"; };
+		CA6C7340083B969C0006D65C /* SPScreenView.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPScreenView.mm; sourceTree = "<group>"; };
+		CA6C7341083B969C0006D65C /* SPTableView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPTableView.h; sourceTree = "<group>"; };
+		CA6C7342083B969C0006D65C /* SPTableView.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPTableView.mm; sourceTree = "<group>"; };
+		CA6C7349083B969C0006D65C /* StatusConnected.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusConnected.tif; sourceTree = "<group>"; };
+		CA6C734A083B969C0006D65C /* StatusConnected_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusConnected_P.tif; sourceTree = "<group>"; };
+		CA6C734B083B969C0006D65C /* StatusConnecting_1.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusConnecting_1.tif; sourceTree = "<group>"; };
+		CA6C734C083B969C0006D65C /* StatusConnecting_1_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusConnecting_1_P.tif; sourceTree = "<group>"; };
+		CA6C734D083B969C0006D65C /* StatusConnecting_2.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusConnecting_2.tif; sourceTree = "<group>"; };
+		CA6C734E083B969C0006D65C /* StatusConnecting_2_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusConnecting_2_P.tif; sourceTree = "<group>"; };
+		CA6C734F083B969C0006D65C /* StatusDisconnected.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDisconnected.tif; sourceTree = "<group>"; };
+		CA6C7350083B969C0006D65C /* StatusDisconnected_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDisconnected_P.tif; sourceTree = "<group>"; };
+		CA6C7351083B969C0006D65C /* StatusDiscovering_1.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDiscovering_1.tif; sourceTree = "<group>"; };
+		CA6C7352083B969C0006D65C /* StatusDiscovering_1_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDiscovering_1_P.tif; sourceTree = "<group>"; };
+		CA6C7353083B969C0006D65C /* StatusDiscovering_2.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDiscovering_2.tif; sourceTree = "<group>"; };
+		CA6C7354083B969C0006D65C /* StatusDiscovering_2_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDiscovering_2_P.tif; sourceTree = "<group>"; };
+		CA6C7355083B969C0006D65C /* StatusDiscovering_3.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDiscovering_3.tif; sourceTree = "<group>"; };
+		CA6C7356083B969C0006D65C /* StatusDiscovering_3_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusDiscovering_3_P.tif; sourceTree = "<group>"; };
+		CA6C7357083B969C0006D65C /* StatusError.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusError.tif; sourceTree = "<group>"; };
+		CA6C7358083B969C0006D65C /* StatusError_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusError_P.tif; sourceTree = "<group>"; };
+		CA6C7359083B969C0006D65C /* StatusIdle.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusIdle.tif; sourceTree = "<group>"; };
+		CA6C735A083B969C0006D65C /* StatusIdle_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusIdle_P.tif; sourceTree = "<group>"; };
+		CA6C735B083B969C0006D65C /* StatusInvalid.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusInvalid.tif; sourceTree = "<group>"; };
+		CA6C735C083B969C0006D65C /* StatusInvalid_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusInvalid_P.tif; sourceTree = "<group>"; };
+		CA6C735D083B969C0006D65C /* StatusRunning.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusRunning.tif; sourceTree = "<group>"; };
+		CA6C735E083B969C0006D65C /* StatusRunning_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusRunning_P.tif; sourceTree = "<group>"; };
+		CA6C735F083B969C0006D65C /* Synergy Status.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Synergy Status.psd"; sourceTree = "<group>"; };
+		CA6C736B083B96A60006D65C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CA6C736C083B96A60006D65C /* Read Me.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "Read Me.rtf"; sourceTree = "<group>"; };
+		CA6C7372083B96D50006D65C /* Synergyd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Synergyd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6C737E083B97720006D65C /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA6C7384083B979B0006D65C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Synergyd.nib; sourceTree = "<group>"; };
+		CA6C739F083B985E0006D65C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		CA6C73A3083B986D0006D65C /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		CA6C73A6083B98830006D65C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /System/Library/Frameworks/SystemConfiguration.framework; sourceTree = "<absolute>"; };
+		CA6C73EE083B9AE60006D65C /* SynergyKM.prefpane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynergyKM.prefpane; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6C7445083B9CE10006D65C /* LCSStdIOTaskWrapper.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = LCSStdIOTaskWrapper.h; sourceTree = "<group>"; };
+		CA6C7446083B9CE10006D65C /* LCSStdIOTaskWrapper.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = LCSStdIOTaskWrapper.m; sourceTree = "<group>"; };
+		CA6C7447083B9CE10006D65C /* SDConstants.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDConstants.h; sourceTree = "<group>"; };
+		CA6C7448083B9CE10006D65C /* SDConstants.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDConstants.m; sourceTree = "<group>"; };
+		CA6C7449083B9CE10006D65C /* SPProcessInfoAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPProcessInfoAdditions.h; sourceTree = "<group>"; };
+		CA6C744A083B9CE10006D65C /* SPProcessInfoAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SPProcessInfoAdditions.m; sourceTree = "<group>"; };
+		CA6C744B083B9CE10006D65C /* SynergyKM_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SynergyKM_Prefix.pch; sourceTree = "<group>"; };
+		CA6D6FFF087B09940086E3BB /* synergyc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = synergyc; path = Components/synergy/build/Release/synergyc; sourceTree = "<group>"; };
+		CA6D7000087B09950086E3BB /* synergys */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = synergys; path = Components/synergy/build/Release/synergys; sourceTree = "<group>"; };
+		CA97F108083F872B00F8650A /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CAA598420840D8DF0076CB83 /* Synergy.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synergy.psd; sourceTree = "<group>"; };
+		CAA598720840DC1F0076CB83 /* Synergy.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Synergy.icns; sourceTree = "<group>"; };
+		CAACFC56087B04FD005200AB /* synergy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = synergy.xcodeproj; path = Components/synergy/synergy.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA05913C089C2E6B00A3901F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA05922B089C325F00A3901F /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA059235089C32C900A3901F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA059255089C333300A3901F /* Cocoa.framework in Frameworks */,
+				CA059257089C334D00A3901F /* AppleScriptKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5B4F09083DF8D00071F3C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5B4FA1083DFD5C0071F3C7 /* Cocoa.framework in Frameworks */,
+				CA5B4FAD083DFE310071F3C7 /* SystemUIPlugin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6C7370083B96D50006D65C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6C73A0083B985E0006D65C /* Cocoa.framework in Frameworks */,
+				CA6C73A7083B98830006D65C /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6C73EC083B9AE60006D65C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6C7457083B9D530006D65C /* PreferencePanes.framework in Frameworks */,
+				CA6C7458083B9D540006D65C /* Cocoa.framework in Frameworks */,
+				4C80E0EC089617E800E14B0E /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C39E8640924C78C009BD9B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C39E86B0924C78C009BD9B1 /* MenuCracker.menu */,
+				4C39E86D0924C78C009BD9B1 /* openUp */,
+				4C39E86F0924C78C009BD9B1 /* version */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA059176089C30B300A3901F /* Installer */ = {
+			isa = PBXGroup;
+			children = (
+				CA059178089C30FA00A3901F /* InfoPlist.strings */,
+				CA05917A089C30FA00A3901F /* MainMenu.nib */,
+				CA05917E089C30FA00A3901F /* Info.plist */,
+				CA05917F089C30FA00A3901F /* installer.applescript */,
+				CA059180089C30FA00A3901F /* installer.m */,
+				CA059181089C30FA00A3901F /* quitsynergyd.m */,
+			);
+			name = Installer;
+			path = Components/Installer;
+			sourceTree = "<group>";
+		};
+		CA5B5388083EA72B0071F3C7 /* StatusMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				CA5B5389083EA72B0071F3C7 /* SKMMenuExtraController.h */,
+				CA5B538A083EA72B0071F3C7 /* SKMMenuExtraController.m */,
+				CA5B53AE083EA7E40071F3C7 /* MenuCracker.menu */,
+			);
+			name = StatusMenuController;
+			path = Components/StatusMenuController;
+			sourceTree = "<group>";
+		};
+		CA6C72E7083B926D0006D65C = {
+			isa = PBXGroup;
+			children = (
+				CA6C736A083B96A60006D65C /* Documentation */,
+				CA6C72FB083B969B0006D65C /* Daemon */,
+				CA059176089C30B300A3901F /* Installer */,
+				CA6C7314083B969B0006D65C /* Prefpane */,
+				CA6C7343083B969C0006D65C /* StatusMenu */,
+				CA5B5388083EA72B0071F3C7 /* StatusMenuController */,
+				CA6C7444083B9CE10006D65C /* Common */,
+				CA6C739C083B98400006D65C /* Frameworks */,
+				4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */,
+				CAACFC56087B04FD005200AB /* synergy.xcodeproj */,
+				CA6D6FFF087B09940086E3BB /* synergyc */,
+				CA6D7000087B09950086E3BB /* synergys */,
+				CA6C7373083B96D50006D65C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA6C72FB083B969B0006D65C /* Daemon */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C72FC083B969B0006D65C /* Resources */,
+				CA6C72FE083B969B0006D65C /* Source */,
+				CA6C7313083B969B0006D65C /* Synergyd.m */,
+			);
+			name = Daemon;
+			path = Components/Daemon;
+			sourceTree = "<group>";
+		};
+		CA6C72FC083B969B0006D65C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C72FD083B969B0006D65C /* Info.plist */,
+				CA6C737D083B97720006D65C /* InfoPlist.strings */,
+				CA6C7383083B979B0006D65C /* Synergyd.nib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA6C72FE083B969B0006D65C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C72FF083B969B0006D65C /* SDAppController.h */,
+				CA6C7300083B969B0006D65C /* SDAppController.m */,
+				CA6C7301083B969B0006D65C /* SDAutomaticConfigurationAgent.h */,
+				CA6C7302083B969B0006D65C /* SDAutomaticConfigurationAgent.m */,
+				CA6C7303083B969B0006D65C /* SDConfigurationAgent.h */,
+				CA6C7304083B969B0006D65C /* SDConfigurationAgent.m */,
+				CA6C7305083B969B0006D65C /* SDConfigurationManager.h */,
+				CA6C7306083B969B0006D65C /* SDConfigurationManager.m */,
+				CA6C7307083B969B0006D65C /* SDStaticConfigurationAgent.h */,
+				CA6C7308083B969B0006D65C /* SDStaticConfigurationAgent.m */,
+				CA6C7309083B969B0006D65C /* SDStatusUpdater.h */,
+				CA6C730A083B969B0006D65C /* SDStatusUpdater.m */,
+				CA6C730B083B969B0006D65C /* SDSynergyClientWrapper.h */,
+				CA6C730C083B969B0006D65C /* SDSynergyClientWrapper.m */,
+				CA6C730D083B969B0006D65C /* SDSynergyServerWrapper.h */,
+				CA6C730E083B969B0006D65C /* SDSynergyServerWrapper.m */,
+				CA6C730F083B969B0006D65C /* SDSynergyWrapper.h */,
+				CA6C7310083B969B0006D65C /* SDSynergyWrapper.m */,
+				CA6C7311083B969B0006D65C /* SDUtilities.h */,
+				CA6C7312083B969B0006D65C /* SDUtilities.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CA6C7314083B969B0006D65C /* Prefpane */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C7315083B969B0006D65C /* Configuration */,
+				CA6C731C083B969B0006D65C /* Controllers */,
+				CA6C732F083B969C0006D65C /* Resources */,
+				CA6C7337083B969C0006D65C /* SynergyPane.h */,
+				CA6C7338083B969C0006D65C /* SynergyPane.mm */,
+				CA6C7339083B969C0006D65C /* Utilities */,
+				CA6C733E083B969C0006D65C /* Widgets */,
+			);
+			name = Prefpane;
+			path = Components/Prefpane;
+			sourceTree = "<group>";
+		};
+		CA6C7315083B969B0006D65C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C7316083B969B0006D65C /* SPConfigEntry.h */,
+				CA6C7317083B969B0006D65C /* SPConfigEntry.mm */,
+				CA6C7318083B969B0006D65C /* SPConfigurationManager.h */,
+				CA6C7319083B969B0006D65C /* SPConfigurationManager.mm */,
+				CA6C731A083B969B0006D65C /* SPScreenEntry.h */,
+				CA6C731B083B969B0006D65C /* SPScreenEntry.mm */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CA6C731C083B969B0006D65C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C731D083B969B0006D65C /* SPAliasesListController.h */,
+				CA6C731E083B969B0006D65C /* SPAliasesListController.mm */,
+				CA6C731F083B969B0006D65C /* SPBaseSheetController.h */,
+				CA6C7320083B969B0006D65C /* SPBaseSheetController.mm */,
+				CA6C7321083B969B0006D65C /* SPClientTabController.h */,
+				CA6C7322083B969B0006D65C /* SPClientTabController.mm */,
+				CA6C7323083B969B0006D65C /* SPEditLocationController.h */,
+				CA6C7324083B969B0006D65C /* SPEditLocationController.mm */,
+				CA6C7325083B969B0006D65C /* SPNewLocationController.h */,
+				CA6C7326083B969B0006D65C /* SPNewLocationController.mm */,
+				CA6C7327083B969B0006D65C /* SPScreenEntryBaseSheetController.h */,
+				CA6C7328083B969B0006D65C /* SPScreenEntryBaseSheetController.mm */,
+				CA6C7329083B969C0006D65C /* SPScreenOptionsController.h */,
+				CA6C732A083B969C0006D65C /* SPScreenOptionsController.mm */,
+				CA6C732B083B969C0006D65C /* SPServerOptionsController.h */,
+				CA6C732C083B969C0006D65C /* SPServerOptionsController.mm */,
+				CA6C732D083B969C0006D65C /* SPServerTabController.h */,
+				CA6C732E083B969C0006D65C /* SPServerTabController.mm */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA6C732F083B969C0006D65C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C7416083B9C1D0006D65C /* InfoPlist.strings */,
+				CA6C741A083B9C230006D65C /* SynergyPane.nib */,
+				CA6C7334083B969C0006D65C /* Info.plist */,
+				CA6C7335083B969C0006D65C /* screen.tiff */,
+				CA6C7336083B969C0006D65C /* SynergyPref.tiff */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA6C7339083B969C0006D65C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C733A083B969C0006D65C /* SPBezierPath+RoundRect.h */,
+				CA6C733B083B969C0006D65C /* SPBezierPath+RoundRect.m */,
+				CA6C733C083B969C0006D65C /* SPStringAdditions.h */,
+				CA6C733D083B969C0006D65C /* SPStringAdditions.mm */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CA6C733E083B969C0006D65C /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C733F083B969C0006D65C /* SPScreenView.h */,
+				CA6C7340083B969C0006D65C /* SPScreenView.mm */,
+				CA6C7341083B969C0006D65C /* SPTableView.h */,
+				CA6C7342083B969C0006D65C /* SPTableView.mm */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		CA6C7343083B969C0006D65C /* StatusMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C7344083B969C0006D65C /* Resources */,
+				CA6C7360083B969C0006D65C /* Source */,
+			);
+			name = StatusMenu;
+			path = Components/StatusMenu;
+			sourceTree = "<group>";
+		};
+		CA6C7344083B969C0006D65C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA97F107083F872B00F8650A /* InfoPlist.strings */,
+				CA5B4F12083DF9350071F3C7 /* Info.plist */,
+				CA6C7349083B969C0006D65C /* StatusConnected.tif */,
+				CA6C734A083B969C0006D65C /* StatusConnected_P.tif */,
+				CA6C734B083B969C0006D65C /* StatusConnecting_1.tif */,
+				CA6C734C083B969C0006D65C /* StatusConnecting_1_P.tif */,
+				CA6C734D083B969C0006D65C /* StatusConnecting_2.tif */,
+				CA6C734E083B969C0006D65C /* StatusConnecting_2_P.tif */,
+				CA6C734F083B969C0006D65C /* StatusDisconnected.tif */,
+				CA6C7350083B969C0006D65C /* StatusDisconnected_P.tif */,
+				CA6C7351083B969C0006D65C /* StatusDiscovering_1.tif */,
+				CA6C7352083B969C0006D65C /* StatusDiscovering_1_P.tif */,
+				CA6C7353083B969C0006D65C /* StatusDiscovering_2.tif */,
+				CA6C7354083B969C0006D65C /* StatusDiscovering_2_P.tif */,
+				CA6C7355083B969C0006D65C /* StatusDiscovering_3.tif */,
+				CA6C7356083B969C0006D65C /* StatusDiscovering_3_P.tif */,
+				CA6C7357083B969C0006D65C /* StatusError.tif */,
+				CA6C7358083B969C0006D65C /* StatusError_P.tif */,
+				CA6C7359083B969C0006D65C /* StatusIdle.tif */,
+				CA6C735A083B969C0006D65C /* StatusIdle_P.tif */,
+				CA6C735B083B969C0006D65C /* StatusInvalid.tif */,
+				CA6C735C083B969C0006D65C /* StatusInvalid_P.tif */,
+				CA6C735D083B969C0006D65C /* StatusRunning.tif */,
+				CA6C735E083B969C0006D65C /* StatusRunning_P.tif */,
+				CA3C3B1B087D34D3007161A1 /* StatusWarning_P.tif */,
+				CA3C3B1C087D34D3007161A1 /* StatusWarning.tif */,
+				CA6C735F083B969C0006D65C /* Synergy Status.psd */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CA6C7360083B969C0006D65C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CA5B4F4D083DFB700071F3C7 /* SMStatusMenuExtra.h */,
+				CA5B4F4E083DFB700071F3C7 /* SMStatusMenuExtra.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CA6C736A083B96A60006D65C /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C736B083B96A60006D65C /* LICENSE.txt */,
+				CA6C736C083B96A60006D65C /* Read Me.rtf */,
+				CA35EBFC087C4F2600369580 /* BUGS */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		CA6C7373083B96D50006D65C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C7372083B96D50006D65C /* Synergyd.app */,
+				CA6C73EE083B9AE60006D65C /* SynergyKM.prefpane */,
+				CA5B4F0B083DF8D00071F3C7 /* SynergyKM.menu */,
+				CA05913E089C2E6B00A3901F /* quitsynergyd */,
+				CA059237089C32C900A3901F /* SynergyKM Installer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA6C739C083B98400006D65C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA059256089C334D00A3901F /* AppleScriptKit.framework */,
+				CA05922A089C325F00A3901F /* CoreFoundation.framework */,
+				CA5B4FAC083DFE310071F3C7 /* SystemUIPlugin.framework */,
+				CA6C739F083B985E0006D65C /* Cocoa.framework */,
+				CA6C73A6083B98830006D65C /* SystemConfiguration.framework */,
+				CA6C73A3083B986D0006D65C /* PreferencePanes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA6C7444083B9CE10006D65C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CA6C7445083B9CE10006D65C /* LCSStdIOTaskWrapper.h */,
+				CA6C7446083B9CE10006D65C /* LCSStdIOTaskWrapper.m */,
+				CA6C7447083B9CE10006D65C /* SDConstants.h */,
+				CA6C7448083B9CE10006D65C /* SDConstants.m */,
+				CA6C7449083B9CE10006D65C /* SPProcessInfoAdditions.h */,
+				CA6C744A083B9CE10006D65C /* SPProcessInfoAdditions.m */,
+				CA6C744B083B9CE10006D65C /* SynergyKM_Prefix.pch */,
+				CA5B50A3083E0D490071F3C7 /* SKMServerController.h */,
+				CA5B50A4083E0D490071F3C7 /* SKMServerController.m */,
+				CAA598720840DC1F0076CB83 /* Synergy.icns */,
+				CAA598420840D8DF0076CB83 /* Synergy.psd */,
+			);
+			name = Common;
+			path = Components/Common;
+			sourceTree = "<group>";
+		};
+		CAACFC57087B04FD005200AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAACFC68087B04FE005200AB /* libarch.a */,
+				CAACFC6A087B04FE005200AB /* libcommon.a */,
+				CAACFC6C087B04FE005200AB /* libbase.a */,
+				CAACFC6E087B04FE005200AB /* libmt.a */,
+				CAACFC70087B04FE005200AB /* libio.a */,
+				CAACFC72087B04FE005200AB /* libnet.a */,
+				CAACFC74087B04FE005200AB /* libsynergy.a */,
+				CAACFC76087B04FE005200AB /* libplatform.a */,
+				CAACFC78087B04FE005200AB /* libclient.a */,
+				CAACFC7A087B04FE005200AB /* libserver.a */,
+				CAACFC7C087B04FE005200AB /* synergyc */,
+				CAACFC7E087B04FE005200AB /* synergys */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA05913D089C2E6B00A3901F /* quitsynergyd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA059146089C2EB100A3901F /* Build configuration list for PBXNativeTarget "quitsynergyd" */;
+			buildPhases = (
+				CA05913B089C2E6B00A3901F /* Sources */,
+				CA05913C089C2E6B00A3901F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = "$(HOME)/bin";
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = quitsynergyd;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+			);
+			name = quitsynergyd;
+			productName = quitsynergyd;
+			productReference = CA05913E089C2E6B00A3901F /* quitsynergyd */;
+			productType = "com.apple.product-type.tool";
+		};
+		CA059236089C32C900A3901F /* SynergyKM Installer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA05923E089C32CB00A3901F /* Build configuration list for PBXNativeTarget "SynergyKM Installer" */;
+			buildPhases = (
+				CA05924A089C32E900A3901F /* AppleScript */,
+				CA059233089C32C900A3901F /* Resources */,
+				CA059234089C32C900A3901F /* Sources */,
+				CA059235089C32C900A3901F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "Synergy Installer-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OPTIMIZATION_CFLAGS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = "Synergy Installer";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			dependencies = (
+				CA059243089C32D800A3901F /* PBXTargetDependency */,
+				CA059264089C341D00A3901F /* PBXTargetDependency */,
+			);
+			name = "SynergyKM Installer";
+			productName = "Synergy Installer";
+			productReference = CA059237089C32C900A3901F /* SynergyKM Installer.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Synergy Installer</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.Synergy_Installer</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		CA5B4F0A083DF8D00071F3C7 /* StatusMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3CDB6A087AF15F00A4B356 /* Build configuration list for PBXNativeTarget "StatusMenu" */;
+			buildPhases = (
+				CA5B4F07083DF8D00071F3C7 /* Resources */,
+				CA5B4F08083DF8D00071F3C7 /* Sources */,
+				CA5B4F09083DF8D00071F3C7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/StatusMenu/Resources/Info.plist;
+				LIBRARY_STYLE = BUNDLE;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				PRODUCT_NAME = SynergyKM;
+				WRAPPER_EXTENSION = menu;
+			};
+			dependencies = (
+			);
+			name = StatusMenu;
+			productName = StatusMenu;
+			productReference = CA5B4F0B083DF8D00071F3C7 /* SynergyKM.menu */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>StatusMenu</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.StatusMenu</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+		CA6C7371083B96D50006D65C /* Daemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3CDB66087AF15F00A4B356 /* Build configuration list for PBXNativeTarget "Daemon" */;
+			buildPhases = (
+				CA6C736E083B96D50006D65C /* Resources */,
+				CA6C736F083B96D50006D65C /* Sources */,
+				CA6C7370083B96D50006D65C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				INFOPLIST_FILE = Components/Daemon/Resources/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				PRODUCT_NAME = Synergyd;
+			};
+			dependencies = (
+				CA6D6FF3087B06AC0086E3BB /* PBXTargetDependency */,
+				CA6D6FF5087B06AC0086E3BB /* PBXTargetDependency */,
+			);
+			name = Daemon;
+			productName = Synergyd;
+			productReference = CA6C7372083B96D50006D65C /* Synergyd.app */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Synergyd</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.Synergyd</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.application";
+		};
+		CA6C73ED083B9AE60006D65C /* Prefpane */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3CDB6E087AF15F00A4B356 /* Build configuration list for PBXNativeTarget "Prefpane" */;
+			buildPhases = (
+				CA6C73EA083B9AE60006D65C /* Resources */,
+				CA6C73EB083B9AE60006D65C /* Sources */,
+				CA6C73EC083B9AE60006D65C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/Prefpane/Resources/Info.plist;
+				LIBRARY_STYLE = BUNDLE;
+				MACOSX_DEPLOYMENT_TARGET = 10.2;
+				PRODUCT_NAME = SynergyKM;
+				WRAPPER_EXTENSION = prefpane;
+			};
+			dependencies = (
+				CA6C7463083B9DAD0006D65C /* PBXTargetDependency */,
+				CA5B52FC083E9FC90071F3C7 /* PBXTargetDependency */,
+				4C4C6DF209A1CA5100B694DC /* PBXTargetDependency */,
+			);
+			name = Prefpane;
+			productName = Prefpane;
+			productReference = CA6C73EE083B9AE60006D65C /* SynergyKM.prefpane */;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Prefpane</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.Prefpane</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+</dict>
+</plist>
+";
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA6C72EB083B926D0006D65C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CA3CDB81087AF15F00A4B356 /* Build configuration list for PBXProject "SynergyKM" */;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
+			};
+			buildStyles = (
+				CA6C72E9083B926D0006D65C /* Development */,
+				CA6C72EA083B926D0006D65C /* Deployment */,
+			);
+			hasScannedForEncodings = 0;
+			mainGroup = CA6C72E7083B926D0006D65C;
+			productRefGroup = CA6C7373083B96D50006D65C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4C39E8640924C78C009BD9B1 /* Products */;
+					ProjectRef = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
+				},
+				{
+					ProductGroup = CAACFC57087B04FD005200AB /* Products */;
+					ProjectRef = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+				},
+			);
+			targets = (
+				CA6C745B083B9D8B0006D65C /* All */,
+				CA6C7371083B96D50006D65C /* Daemon */,
+				CA6C73ED083B9AE60006D65C /* Prefpane */,
+				CA5B4F0A083DF8D00071F3C7 /* StatusMenu */,
+				CA059236089C32C900A3901F /* SynergyKM Installer */,
+				CA05914B089C2EB300A3901F /* Export Helpbook */,
+				CA05913D089C2E6B00A3901F /* quitsynergyd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4C39E86B0924C78C009BD9B1 /* MenuCracker.menu */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MenuCracker.menu;
+			remoteRef = 4C39E86A0924C78C009BD9B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C39E86D0924C78C009BD9B1 /* openUp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = openUp;
+			remoteRef = 4C39E86C0924C78C009BD9B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4C39E86F0924C78C009BD9B1 /* version */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = version;
+			remoteRef = 4C39E86E0924C78C009BD9B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC68087B04FE005200AB /* libarch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libarch.a;
+			remoteRef = CAACFC67087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC6A087B04FE005200AB /* libcommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcommon.a;
+			remoteRef = CAACFC69087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC6C087B04FE005200AB /* libbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase.a;
+			remoteRef = CAACFC6B087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC6E087B04FE005200AB /* libmt.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmt.a;
+			remoteRef = CAACFC6D087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC70087B04FE005200AB /* libio.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libio.a;
+			remoteRef = CAACFC6F087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC72087B04FE005200AB /* libnet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnet.a;
+			remoteRef = CAACFC71087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC74087B04FE005200AB /* libsynergy.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsynergy.a;
+			remoteRef = CAACFC73087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC76087B04FE005200AB /* libplatform.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libplatform.a;
+			remoteRef = CAACFC75087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC78087B04FE005200AB /* libclient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libclient.a;
+			remoteRef = CAACFC77087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC7A087B04FE005200AB /* libserver.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libserver.a;
+			remoteRef = CAACFC79087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC7C087B04FE005200AB /* synergyc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = synergyc;
+			remoteRef = CAACFC7B087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CAACFC7E087B04FE005200AB /* synergys */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = synergys;
+			remoteRef = CAACFC7D087B04FE005200AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA059233089C32C900A3901F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA05925E089C337E00A3901F /* InfoPlist.strings in Resources */,
+				CA05925F089C337E00A3901F /* MainMenu.nib in Resources */,
+				CA059245089C32DF00A3901F /* quitsynergyd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5B4F07083DF8D00071F3C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5B4F25083DF9F70071F3C7 /* StatusConnected.tif in Resources */,
+				CA5B4F26083DF9F70071F3C7 /* StatusConnected_P.tif in Resources */,
+				CA5B4F27083DF9F80071F3C7 /* StatusConnecting_1.tif in Resources */,
+				CA5B4F29083DF9FA0071F3C7 /* StatusConnecting_2.tif in Resources */,
+				CA5B4F2A083DF9FA0071F3C7 /* StatusConnecting_1_P.tif in Resources */,
+				CA5B4F2B083DF9FB0071F3C7 /* StatusConnecting_2_P.tif in Resources */,
+				CA5B4F2C083DF9FC0071F3C7 /* StatusDisconnected.tif in Resources */,
+				CA5B4F2D083DF9FD0071F3C7 /* StatusDisconnected_P.tif in Resources */,
+				CA5B4F2E083DF9FD0071F3C7 /* StatusDiscovering_1.tif in Resources */,
+				CA5B4F2F083DF9FE0071F3C7 /* StatusDiscovering_1_P.tif in Resources */,
+				CA5B4F30083DF9FF0071F3C7 /* StatusDiscovering_2.tif in Resources */,
+				CA5B4F31083DFA000071F3C7 /* StatusDiscovering_2_P.tif in Resources */,
+				CA5B4F32083DFA010071F3C7 /* StatusDiscovering_3.tif in Resources */,
+				CA5B4F33083DFA010071F3C7 /* StatusDiscovering_3_P.tif in Resources */,
+				CA5B4F34083DFA020071F3C7 /* StatusError.tif in Resources */,
+				CA5B4F35083DFA020071F3C7 /* StatusError_P.tif in Resources */,
+				CA5B4F36083DFA030071F3C7 /* StatusIdle.tif in Resources */,
+				CA5B4F37083DFA050071F3C7 /* StatusIdle_P.tif in Resources */,
+				CA5B4F38083DFA050071F3C7 /* StatusInvalid.tif in Resources */,
+				CA5B4F39083DFA050071F3C7 /* StatusInvalid_P.tif in Resources */,
+				CA5B4F3A083DFA060071F3C7 /* StatusRunning.tif in Resources */,
+				CA5B4F3C083DFA070071F3C7 /* StatusRunning_P.tif in Resources */,
+				CA97F109083F872C00F8650A /* InfoPlist.strings in Resources */,
+				CA3C3B1D087D34D3007161A1 /* StatusWarning_P.tif in Resources */,
+				CA3C3B1E087D34D3007161A1 /* StatusWarning.tif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6C736E083B96D50006D65C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6C7381083B97720006D65C /* InfoPlist.strings in Resources */,
+				CA6C7385083B979B0006D65C /* Synergyd.nib in Resources */,
+				CAA598730840DC1F0076CB83 /* Synergy.icns in Resources */,
+				CA6D7001087B09950086E3BB /* synergyc in Resources */,
+				CA6D7002087B09950086E3BB /* synergys in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6C73EA083B9AE60006D65C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4C6DF309A1CA5C00B694DC /* MenuCracker.menu in Resources */,
+				CA6C7431083B9C6E0006D65C /* InfoPlist.strings in Resources */,
+				CA6C7432083B9C6E0006D65C /* SynergyPane.nib in Resources */,
+				CA6C7427083B9C5C0006D65C /* SynergyPref.tiff in Resources */,
+				CA6C742E083B9C5F0006D65C /* screen.tiff in Resources */,
+				CA6C7466083B9DB90006D65C /* Synergyd.app in Resources */,
+				CA5B5301083E9FD70071F3C7 /* SynergyKM.menu in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA05914A089C2EB300A3901F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "PATH=\"/usr/local/bin:/usr/bin:/bin:/opt/local/bin:/sw/bin:$PATH\"\nrm -rf \"$BUILT_PRODUCTS_DIR/SynergyKM Help\"\nsvn export \"$PROJECT_DIR/Documentation/SynergyKM Help\" \"$BUILT_PRODUCTS_DIR/SynergyKM Help\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA05913B089C2E6B00A3901F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA059182089C310400A3901F /* quitsynergyd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA059234089C32C900A3901F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA059252089C332100A3901F /* installer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5B4F08083DF8D00071F3C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5B4F4F083DFB700071F3C7 /* SMStatusMenuExtra.m in Sources */,
+				CA5B506A083E08570071F3C7 /* SPProcessInfoAdditions.m in Sources */,
+				CA5B506B083E08590071F3C7 /* SDConstants.m in Sources */,
+				CA5B50A5083E0D490071F3C7 /* SKMServerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6C736F083B96D50006D65C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6C7388083B97E60006D65C /* SDAppController.m in Sources */,
+				CA6C7389083B97E70006D65C /* SDAutomaticConfigurationAgent.m in Sources */,
+				CA6C738A083B97E70006D65C /* SDConfigurationAgent.m in Sources */,
+				CA6C738B083B97E80006D65C /* SDConfigurationManager.m in Sources */,
+				CA6C738C083B97E90006D65C /* SDStaticConfigurationAgent.m in Sources */,
+				CA6C738D083B97E90006D65C /* SDStatusUpdater.m in Sources */,
+				CA6C738E083B97E90006D65C /* SDSynergyClientWrapper.m in Sources */,
+				CA6C738F083B97EA0006D65C /* SDSynergyServerWrapper.m in Sources */,
+				CA6C7390083B97EB0006D65C /* SDSynergyWrapper.m in Sources */,
+				CA6C7391083B97EB0006D65C /* SDUtilities.m in Sources */,
+				CA6C7392083B97EC0006D65C /* Synergyd.m in Sources */,
+				CA6C747C083B9FA60006D65C /* LCSStdIOTaskWrapper.m in Sources */,
+				CA6C747D083B9FA90006D65C /* SDConstants.m in Sources */,
+				CA6C747E083B9FA90006D65C /* SPProcessInfoAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6C73EB083B9AE60006D65C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA6C741C083B9C560006D65C /* SPScreenEntry.mm in Sources */,
+				CA6C741D083B9C570006D65C /* SPServerTabController.mm in Sources */,
+				CA6C741E083B9C570006D65C /* SPAliasesListController.mm in Sources */,
+				CA6C741F083B9C570006D65C /* SPBaseSheetController.mm in Sources */,
+				CA6C7420083B9C580006D65C /* SPConfigEntry.mm in Sources */,
+				CA6C7421083B9C580006D65C /* SPEditLocationController.mm in Sources */,
+				CA6C7422083B9C590006D65C /* SPBezierPath+RoundRect.m in Sources */,
+				CA6C7423083B9C590006D65C /* SPTableView.mm in Sources */,
+				CA6C7424083B9C5A0006D65C /* SPScreenEntryBaseSheetController.mm in Sources */,
+				CA6C7425083B9C5B0006D65C /* SPConfigurationManager.mm in Sources */,
+				CA6C7426083B9C5B0006D65C /* SPScreenOptionsController.mm in Sources */,
+				CA6C7428083B9C5C0006D65C /* SPStringAdditions.mm in Sources */,
+				CA6C742B083B9C5E0006D65C /* SPScreenView.mm in Sources */,
+				CA6C742C083B9C5E0006D65C /* SPNewLocationController.mm in Sources */,
+				CA6C742D083B9C5F0006D65C /* SPClientTabController.mm in Sources */,
+				CA6C742F083B9C600006D65C /* SPServerOptionsController.mm in Sources */,
+				CA6C7430083B9C620006D65C /* SynergyPane.mm in Sources */,
+				CA6C744D083B9CE10006D65C /* SDConstants.m in Sources */,
+				CA6C744E083B9CE10006D65C /* SPProcessInfoAdditions.m in Sources */,
+				CA5B5375083EA69E0071F3C7 /* SKMServerController.m in Sources */,
+				CA5B538B083EA72B0071F3C7 /* SKMMenuExtraController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C4C6DF209A1CA5100B694DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MenuCracker;
+			targetProxy = 4C4C6DF109A1CA5100B694DC /* PBXContainerItemProxy */;
+		};
+		CA059243089C32D800A3901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA05913D089C2E6B00A3901F /* quitsynergyd */;
+			targetProxy = CA059242089C32D800A3901F /* PBXContainerItemProxy */;
+		};
+		CA059264089C341D00A3901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA05914B089C2EB300A3901F /* Export Helpbook */;
+			targetProxy = CA059263089C341D00A3901F /* PBXContainerItemProxy */;
+		};
+		CA05926A089C346300A3901F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA059236089C32C900A3901F /* SynergyKM Installer */;
+			targetProxy = CA059269089C346300A3901F /* PBXContainerItemProxy */;
+		};
+		CA5B52FA083E9FB70071F3C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5B4F0A083DF8D00071F3C7 /* StatusMenu */;
+			targetProxy = CA5B52F9083E9FB70071F3C7 /* PBXContainerItemProxy */;
+		};
+		CA5B52FC083E9FC90071F3C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5B4F0A083DF8D00071F3C7 /* StatusMenu */;
+			targetProxy = CA5B52FB083E9FC90071F3C7 /* PBXContainerItemProxy */;
+		};
+		CA6C745F083B9DA20006D65C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6C7371083B96D50006D65C /* Daemon */;
+			targetProxy = CA6C745E083B9DA20006D65C /* PBXContainerItemProxy */;
+		};
+		CA6C7461083B9DA20006D65C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6C73ED083B9AE60006D65C /* Prefpane */;
+			targetProxy = CA6C7460083B9DA20006D65C /* PBXContainerItemProxy */;
+		};
+		CA6C7463083B9DAD0006D65C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA6C7371083B96D50006D65C /* Daemon */;
+			targetProxy = CA6C7462083B9DAD0006D65C /* PBXContainerItemProxy */;
+		};
+		CA6D6FF3087B06AC0086E3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = synergyc;
+			targetProxy = CA6D6FF2087B06AC0086E3BB /* PBXContainerItemProxy */;
+		};
+		CA6D6FF5087B06AC0086E3BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = synergys;
+			targetProxy = CA6D6FF4087B06AC0086E3BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA059178089C30FA00A3901F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA059179089C30FA00A3901F /* English */,
+			);
+			name = InfoPlist.strings;
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		CA05917A089C30FA00A3901F /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA05917B089C30FA00A3901F /* English */,
+			);
+			name = MainMenu.nib;
+			path = English.lproj;
+			sourceTree = "<group>";
+		};
+		CA6C737D083B97720006D65C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6C737E083B97720006D65C /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA6C7383083B979B0006D65C /* Synergyd.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6C7384083B979B0006D65C /* English */,
+			);
+			name = Synergyd.nib;
+			sourceTree = "<group>";
+		};
+		CA6C7416083B9C1D0006D65C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6C7331083B969C0006D65C /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CA6C741A083B9C230006D65C /* SynergyPane.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA6C7333083B969C0006D65C /* English */,
+			);
+			name = SynergyPane.nib;
+			sourceTree = "<group>";
+		};
+		CA97F107083F872B00F8650A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA97F108083F872B00F8650A /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA059147089C2EB100A3901F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = quitsynergyd;
+			};
+			name = Debug;
+		};
+		CA059148089C2EB100A3901F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = quitsynergyd;
+			};
+			name = Release;
+		};
+		CA059152089C2EC200A3901F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Helpbook;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		CA059153089C2EC200A3901F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Helpbook;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		CA05923F089C32CB00A3901F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_MODEL_TUNING = G4;
+				INFOPLIST_FILE = Components/Installer/Info.plist;
+				PRODUCT_NAME = "SynergyKM Installer";
+			};
+			name = Debug;
+		};
+		CA059240089C32CB00A3901F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_MODEL_TUNING = G4;
+				INFOPLIST_FILE = Components/Installer/Info.plist;
+				PRODUCT_NAME = "SynergyKM Installer";
+			};
+			name = Release;
+		};
+		CA3CDB67087AF15F00A4B356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/Daemon/Resources/Info.plist;
+				PRODUCT_NAME = Synergyd;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Debug;
+		};
+		CA3CDB68087AF15F00A4B356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/Daemon/Resources/Info.plist;
+				PRODUCT_NAME = Synergyd;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+			};
+			name = Release;
+		};
+		CA3CDB6B087AF15F00A4B356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/StatusMenu/Resources/Info.plist;
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = SynergyKM;
+				WRAPPER_EXTENSION = menu;
+			};
+			name = Debug;
+		};
+		CA3CDB6C087AF15F00A4B356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/StatusMenu/Resources/Info.plist;
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = SynergyKM;
+				WRAPPER_EXTENSION = menu;
+			};
+			name = Release;
+		};
+		CA3CDB6F087AF15F00A4B356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/Prefpane/Resources/Info.plist;
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = SynergyKM;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		CA3CDB70087AF15F00A4B356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
+				INFOPLIST_FILE = Components/Prefpane/Resources/Info.plist;
+				LIBRARY_STYLE = BUNDLE;
+				PRODUCT_NAME = SynergyKM;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				WRAPPER_EXTENSION = prefpane;
+			};
+			name = Release;
+		};
+		CA3CDB73087AF15F00A4B356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		CA3CDB74087AF15F00A4B356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				PRODUCT_NAME = All;
+			};
+			name = Release;
+		};
+		CA3CDB82087AF15F00A4B356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		CA3CDB83087AF15F00A4B356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_DYNAMIC_NO_PIC = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_VERSION_i386 = 4.0;
+				GCC_VERSION_ppc = 3.3;
+				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA059146089C2EB100A3901F /* Build configuration list for PBXNativeTarget "quitsynergyd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA059147089C2EB100A3901F /* Debug */,
+				CA059148089C2EB100A3901F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA059151089C2EC200A3901F /* Build configuration list for PBXAggregateTarget "Export Helpbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA059152089C2EC200A3901F /* Debug */,
+				CA059153089C2EC200A3901F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA05923E089C32CB00A3901F /* Build configuration list for PBXNativeTarget "SynergyKM Installer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA05923F089C32CB00A3901F /* Debug */,
+				CA059240089C32CB00A3901F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA3CDB66087AF15F00A4B356 /* Build configuration list for PBXNativeTarget "Daemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CDB67087AF15F00A4B356 /* Debug */,
+				CA3CDB68087AF15F00A4B356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA3CDB6A087AF15F00A4B356 /* Build configuration list for PBXNativeTarget "StatusMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CDB6B087AF15F00A4B356 /* Debug */,
+				CA3CDB6C087AF15F00A4B356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA3CDB6E087AF15F00A4B356 /* Build configuration list for PBXNativeTarget "Prefpane" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CDB6F087AF15F00A4B356 /* Debug */,
+				CA3CDB70087AF15F00A4B356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA3CDB72087AF15F00A4B356 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CDB73087AF15F00A4B356 /* Debug */,
+				CA3CDB74087AF15F00A4B356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CA3CDB81087AF15F00A4B356 /* Build configuration list for PBXProject "SynergyKM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CDB82087AF15F00A4B356 /* Debug */,
+				CA3CDB83087AF15F00A4B356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA6C72EB083B926D0006D65C /* Project object */;
+}

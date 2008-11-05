@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# SetFolderIcon.sh 
+#    Copyright 2002 Stephane Corthesy, stephane @ sente.ch
+#    Modified by james_007_bond @ mac.com
+#
+# Usage: 
+# SetFolderIcon.sh folder icon 
+# Ê where icon must be a .icns file 
+
+myRez=/tmp/Icon.r 
+format1='"    $@"' 
+format2='"%04X "' 
+format3='"@\n"' 
+myDest=$1 
+directoryImageFile=`echo Iconr | tr r "\r"` 
+
+rm -rf $myRez 
+
+echo "data 'icns' (-16455) {" > $myRez 
+cat $2 | hexdump -v -e " $format1 8/2 $format2 $format3" | tr '@' '"' >> $myRez 
+echo '};' >> $myRez 
+
+/Developer/Tools/Rez $myRez -o $myDest/$directoryImageFile 
+/Developer/Tools/SetFile -c "MACS" -t "icon" -a V $myDest/$directoryImageFile 
+/Developer/Tools/SetFile -a C $myDest 
+rm -rf $myRez 

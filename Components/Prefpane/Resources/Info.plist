@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>SynergyKM</string>
+	<key>CFBundleIconFile</key>
+	<string>SynergyPref.tiff</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.sourceforge.synergy2.synergypane</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleSignature</key>
+	<string>Sngy</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.6b</string>
+	<key>NSMainNibFile</key>
+	<string>SynergyPane</string>
+	<key>NSPrefPaneIconFile</key>
+	<string>SynergyPref.tiff</string>
+	<key>NSPrefPaneIconLabel</key>
+	<string>SynergyKM</string>
+	<key>NSPrincipalClass</key>
+	<string>SynergyPane</string>
+</dict>
+</plist>
