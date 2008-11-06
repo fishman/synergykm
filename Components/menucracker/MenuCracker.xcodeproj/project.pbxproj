@@ -13,19 +13,6 @@
 			buildPhases = (
 				4C530E960909B212009B01FF /* ShellScript */,
 			);
-			buildSettings = {
-				OPTIMIZATION_CFLAGS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Test;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
 			dependencies = (
 				4C530E9D0909B21A009B01FF /* PBXTargetDependency */,
 				4C530E9B0909B21A009B01FF /* PBXTargetDependency */,
@@ -46,31 +33,6 @@
 		4C53095D0908F88E009B01FF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		014CEA420018CDE011CA2923 /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				OPTIMIZATION_CFLAGS = "-O0";
-				ZERO_LINK = YES;
-			};
-			name = Development;
-		};
-		014CEA430018CDE011CA2923 /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				ZERO_LINK = NO;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
 		4C530E9A0909B21A009B01FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -90,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		4C53094A0908F88E009B01FF /* Info-MenuCracker.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Info-MenuCracker.plist"; sourceTree = "<group>"; };
+		4C53094A0908F88E009B01FF /* Info-MenuCracker.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-MenuCracker.plist"; sourceTree = "<group>"; };
 		4C53094B0908F88E009B01FF /* MenuCracker.menu */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuCracker.menu; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5309560908F88E009B01FF /* openUp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openUp; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5309630908F88E009B01FF /* version */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = version; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,22 +183,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 6;
-				DEBUGGING_SYMBOLS = NO;
-				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
-				INSTALL_PATH = /;
-				PRODUCT_NAME = MenuCracker;
-				USE_GCC3_PFE_SUPPORT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = MenuCracker;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-				WRAPPER_EXTENSION = menu;
-			};
 			dependencies = (
 			);
 			name = MenuCracker;
@@ -256,19 +202,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 6;
-				PRODUCT_NAME = openUp;
-				REZ_EXECUTABLE = YES;
-				USE_GCC3_PFE_SUPPORT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = MenuCracker_;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
 			dependencies = (
 			);
 			name = OpenUp;
@@ -288,18 +221,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				CURRENT_PROJECT_VERSION = 6;
-				PRODUCT_NAME = version;
-				REZ_EXECUTABLE = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = MenuCracker_;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
 			dependencies = (
 			);
 			name = version;
@@ -314,15 +235,11 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 4C5309250908F830009B01FF /* Build configuration list for PBXProject "MenuCracker" */;
-			buildSettings = {
-			};
-			buildStyles = (
-				014CEA420018CDE011CA2923 /* Development */,
-				014CEA430018CDE011CA2923 /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* MenuCracker */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				4C53093A0908F88E009B01FF /* MenuCracker */,
 				4C53094C0908F88E009B01FF /* OpenUp */,
@@ -441,11 +358,11 @@
 					i386,
 				);
 				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
+				GCC_VERSION_ppc = 4.0;
 				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Debug;
 		};
@@ -457,11 +374,11 @@
 					i386,
 				);
 				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
+				GCC_VERSION_ppc = 4.0;
 				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
 				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Release;
 		};
@@ -598,7 +515,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				OPTIMIZATION_CFLAGS = "-O0";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -617,7 +534,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				OPTIMIZATION_CFLAGS = "-O0";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";

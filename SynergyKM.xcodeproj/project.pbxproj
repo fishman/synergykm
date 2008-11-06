@@ -13,19 +13,6 @@
 			buildPhases = (
 				CA05914A089C2EB300A3901F /* ShellScript */,
 			);
-			buildSettings = {
-				OPTIMIZATION_CFLAGS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = Helpbook;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
 			dependencies = (
 			);
 			name = "Export Helpbook";
@@ -36,9 +23,6 @@
 			buildConfigurationList = CA3CDB72087AF15F00A4B356 /* Build configuration list for PBXAggregateTarget "All" */;
 			buildPhases = (
 			);
-			buildSettings = {
-				PRODUCT_NAME = All;
-			};
 			dependencies = (
 				CA6C745F083B9DA20006D65C /* PBXTargetDependency */,
 				CA6C7461083B9DA20006D65C /* PBXTargetDependency */,
@@ -158,25 +142,91 @@
 		CAA598730840DC1F0076CB83 /* Synergy.icns in Resources */ = {isa = PBXBuildFile; fileRef = CAA598720840DC1F0076CB83 /* Synergy.icns */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXBuildStyle section */
-		CA6C72E9083B926D0006D65C /* Development */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Development;
-		};
-		CA6C72EA083B926D0006D65C /* Deployment */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
-			};
-			name = Deployment;
-		};
-/* End PBXBuildStyle section */
-
 /* Begin PBXContainerItemProxy section */
+		27656AC40EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB437B5063E443800969041 /* libarch.a */;
+			remoteInfo = arch;
+		};
+		27656AC60EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C5E868D0648C2ED003C637B /* libcommon.a */;
+			remoteInfo = common;
+		};
+		27656AC80EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB437D1063E44C200969041 /* libbase.a */;
+			remoteInfo = base;
+		};
+		27656ACA0EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43801063E45F200969041 /* libmt.a */;
+			remoteInfo = mt;
+		};
+		27656ACC0EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43824063E46AB00969041 /* libio.a */;
+			remoteInfo = io;
+		};
+		27656ACE0EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43848063E475800969041 /* libnet.a */;
+			remoteInfo = net;
+		};
+		27656AD00EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB4386E063E47F800969041 /* libsynergy.a */;
+			remoteInfo = synergy;
+		};
+		27656AD20EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB438B1063E488600969041 /* libplatform.a */;
+			remoteInfo = platform;
+		};
+		27656AD40EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43778063E406A00969041 /* libclient.a */;
+			remoteInfo = client;
+		};
+		27656AD60EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C537F31064E29F800D3815C /* libserver.a */;
+			remoteInfo = server;
+		};
+		27656AD80EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CB43914063E497700969041 /* synergyc */;
+			remoteInfo = synergyc;
+		};
+		27656ADA0EC2614800951CF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C537F0D064E286700D3815C /* synergys */;
+			remoteInfo = synergys;
+		};
 		4C39E86A0924C78C009BD9B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
@@ -197,13 +247,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 4C5309630908F88E009B01FF;
 			remoteInfo = version;
-		};
-		4C4C6DF109A1CA5100B694DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C53093A0908F88E009B01FF;
-			remoteInfo = MenuCracker;
 		};
 		CA059242089C32D800A3901F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -261,104 +304,6 @@
 			remoteGlobalIDString = CA6C7371083B96D50006D65C;
 			remoteInfo = Daemon;
 		};
-		CA6D6FF2087B06AC0086E3BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CB43913063E497700969041;
-			remoteInfo = synergyc;
-		};
-		CA6D6FF4087B06AC0086E3BB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C537F0C064E286700D3815C;
-			remoteInfo = synergys;
-		};
-		CAACFC67087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB437B5063E443800969041;
-			remoteInfo = arch;
-		};
-		CAACFC69087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C5E868D0648C2ED003C637B;
-			remoteInfo = common;
-		};
-		CAACFC6B087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB437D1063E44C200969041;
-			remoteInfo = base;
-		};
-		CAACFC6D087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB43801063E45F200969041;
-			remoteInfo = mt;
-		};
-		CAACFC6F087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB43824063E46AB00969041;
-			remoteInfo = io;
-		};
-		CAACFC71087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB43848063E475800969041;
-			remoteInfo = net;
-		};
-		CAACFC73087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB4386E063E47F800969041;
-			remoteInfo = synergy;
-		};
-		CAACFC75087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB438B1063E488600969041;
-			remoteInfo = platform;
-		};
-		CAACFC77087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB43778063E406A00969041;
-			remoteInfo = client;
-		};
-		CAACFC79087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C537F31064E29F800D3815C;
-			remoteInfo = server;
-		};
-		CAACFC7B087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CB43914063E497700969041;
-			remoteInfo = synergyc;
-		};
-		CAACFC7D087B04FE005200AB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4C537F0D064E286700D3815C;
-			remoteInfo = synergys;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -366,7 +311,7 @@
 		CA05913E089C2E6B00A3901F /* quitsynergyd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = quitsynergyd; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA059179089C30FA00A3901F /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = InfoPlist.strings; sourceTree = "<group>"; };
 		CA05917B089C30FA00A3901F /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = MainMenu.nib; sourceTree = "<group>"; };
-		CA05917E089C30FA00A3901F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA05917E089C30FA00A3901F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA05917F089C30FA00A3901F /* installer.applescript */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.applescript; path = installer.applescript; sourceTree = "<group>"; };
 		CA059180089C30FA00A3901F /* installer.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = installer.m; sourceTree = "<group>"; };
 		CA059181089C30FA00A3901F /* quitsynergyd.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = quitsynergyd.m; sourceTree = "<group>"; };
@@ -377,7 +322,7 @@
 		CA3C3B1B087D34D3007161A1 /* StatusWarning_P.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusWarning_P.tif; sourceTree = "<group>"; };
 		CA3C3B1C087D34D3007161A1 /* StatusWarning.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = StatusWarning.tif; sourceTree = "<group>"; };
 		CA5B4F0B083DF8D00071F3C7 /* SynergyKM.menu */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SynergyKM.menu; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA5B4F12083DF9350071F3C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5B4F12083DF9350071F3C7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA5B4F4D083DFB700071F3C7 /* SMStatusMenuExtra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStatusMenuExtra.h; sourceTree = "<group>"; };
 		CA5B4F4E083DFB700071F3C7 /* SMStatusMenuExtra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStatusMenuExtra.m; sourceTree = "<group>"; };
 		CA5B4FAC083DFE310071F3C7 /* SystemUIPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemUIPlugin.framework; path = /System/Library/PrivateFrameworks/SystemUIPlugin.framework; sourceTree = "<absolute>"; };
@@ -385,8 +330,8 @@
 		CA5B50A4083E0D490071F3C7 /* SKMServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMServerController.m; sourceTree = "<group>"; };
 		CA5B5389083EA72B0071F3C7 /* SKMMenuExtraController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SKMMenuExtraController.h; sourceTree = "<group>"; };
 		CA5B538A083EA72B0071F3C7 /* SKMMenuExtraController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SKMMenuExtraController.m; sourceTree = "<group>"; };
-		CA5B53AE083EA7E40071F3C7 /* MenuCracker.menu */ = {isa = PBXFileReference; explicitFileType = wrapper; name = MenuCracker.menu; path = ../menucracker/build/Release/MenuCracker.menu; sourceTree = "<group>"; };
-		CA6C72FD083B969B0006D65C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5B53AE083EA7E40071F3C7 /* MenuCracker.menu */ = {isa = PBXFileReference; explicitFileType = wrapper; name = MenuCracker.menu; path = ../Release/MenuCracker.menu; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6C72FD083B969B0006D65C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6C72FF083B969B0006D65C /* SDAppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDAppController.h; sourceTree = "<group>"; };
 		CA6C7300083B969B0006D65C /* SDAppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SDAppController.m; sourceTree = "<group>"; };
 		CA6C7301083B969B0006D65C /* SDAutomaticConfigurationAgent.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SDAutomaticConfigurationAgent.h; sourceTree = "<group>"; };
@@ -434,7 +379,7 @@
 		CA6C732E083B969C0006D65C /* SPServerTabController.mm */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.objcpp; path = SPServerTabController.mm; sourceTree = "<group>"; };
 		CA6C7331083B969C0006D65C /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CA6C7333083B969C0006D65C /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/SynergyPane.nib; sourceTree = "<group>"; };
-		CA6C7334083B969C0006D65C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6C7334083B969C0006D65C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6C7335083B969C0006D65C /* screen.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = screen.tiff; sourceTree = "<group>"; };
 		CA6C7336083B969C0006D65C /* SynergyPref.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = SynergyPref.tiff; sourceTree = "<group>"; };
 		CA6C7337083B969C0006D65C /* SynergyPane.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SynergyPane.h; sourceTree = "<group>"; };
@@ -486,12 +431,12 @@
 		CA6C7449083B9CE10006D65C /* SPProcessInfoAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SPProcessInfoAdditions.h; sourceTree = "<group>"; };
 		CA6C744A083B9CE10006D65C /* SPProcessInfoAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = SPProcessInfoAdditions.m; sourceTree = "<group>"; };
 		CA6C744B083B9CE10006D65C /* SynergyKM_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = SynergyKM_Prefix.pch; sourceTree = "<group>"; };
-		CA6D6FFF087B09940086E3BB /* synergyc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = synergyc; path = Components/synergy/build/Release/synergyc; sourceTree = "<group>"; };
-		CA6D7000087B09950086E3BB /* synergys */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = synergys; path = Components/synergy/build/Release/synergys; sourceTree = "<group>"; };
+		CA6D6FFF087B09940086E3BB /* synergyc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = synergyc; path = ../Release/synergyc; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6D7000087B09950086E3BB /* synergys */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = synergys; path = ../Builds/Products/Release/synergys; sourceTree = "<group>"; };
 		CA97F108083F872B00F8650A /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CAA598420840D8DF0076CB83 /* Synergy.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synergy.psd; sourceTree = "<group>"; };
 		CAA598720840DC1F0076CB83 /* Synergy.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Synergy.icns; sourceTree = "<group>"; };
-		CAACFC56087B04FD005200AB /* synergy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = synergy.xcodeproj; path = Components/synergy/synergy.xcodeproj; sourceTree = "<group>"; };
+		CAACFC56087B04FD005200AB /* synergy.xcode */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = synergy.xcode; path = "Components/synergy-1.3.1/synergy.xcode"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -543,6 +488,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27656AB50EC2614800951CF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27656AC50EC2614800951CF8 /* libarch.a */,
+				27656AC70EC2614800951CF8 /* libcommon.a */,
+				27656AC90EC2614800951CF8 /* libbase.a */,
+				27656ACB0EC2614800951CF8 /* libmt.a */,
+				27656ACD0EC2614800951CF8 /* libio.a */,
+				27656ACF0EC2614800951CF8 /* libnet.a */,
+				27656AD10EC2614800951CF8 /* libsynergy.a */,
+				27656AD30EC2614800951CF8 /* libplatform.a */,
+				27656AD50EC2614800951CF8 /* libclient.a */,
+				27656AD70EC2614800951CF8 /* libserver.a */,
+				27656AD90EC2614800951CF8 /* synergyc */,
+				27656ADB0EC2614800951CF8 /* synergys */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4C39E8640924C78C009BD9B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,7 +554,7 @@
 				CA6C7444083B9CE10006D65C /* Common */,
 				CA6C739C083B98400006D65C /* Frameworks */,
 				4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */,
-				CAACFC56087B04FD005200AB /* synergy.xcodeproj */,
+				CAACFC56087B04FD005200AB /* synergy.xcode */,
 				CA6D6FFF087B09940086E3BB /* synergyc */,
 				CA6D7000087B09950086E3BB /* synergys */,
 				CA6C7373083B96D50006D65C /* Products */,
@@ -839,25 +803,6 @@
 			path = Components/Common;
 			sourceTree = "<group>";
 		};
-		CAACFC57087B04FD005200AB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CAACFC68087B04FE005200AB /* libarch.a */,
-				CAACFC6A087B04FE005200AB /* libcommon.a */,
-				CAACFC6C087B04FE005200AB /* libbase.a */,
-				CAACFC6E087B04FE005200AB /* libmt.a */,
-				CAACFC70087B04FE005200AB /* libio.a */,
-				CAACFC72087B04FE005200AB /* libnet.a */,
-				CAACFC74087B04FE005200AB /* libsynergy.a */,
-				CAACFC76087B04FE005200AB /* libplatform.a */,
-				CAACFC78087B04FE005200AB /* libclient.a */,
-				CAACFC7A087B04FE005200AB /* libserver.a */,
-				CAACFC7C087B04FE005200AB /* synergyc */,
-				CAACFC7E087B04FE005200AB /* synergys */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -870,23 +815,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = "$(HOME)/bin";
-				OPTIMIZATION_CFLAGS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
-				PRODUCT_NAME = quitsynergyd;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
 			dependencies = (
 			);
 			name = quitsynergyd;
@@ -905,31 +833,6 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "Synergy Installer-Info.plist";
-				INSTALL_PATH = "$(USER_APPS_DIR)";
-				OPTIMIZATION_CFLAGS = "";
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				OTHER_REZFLAGS = "";
-				PREBINDING = NO;
-				PRODUCT_NAME = "Synergy Installer";
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
 			dependencies = (
 				CA059243089C32D800A3901F /* PBXTargetDependency */,
 				CA059264089C341D00A3901F /* PBXTargetDependency */,
@@ -937,31 +840,6 @@
 			name = "SynergyKM Installer";
 			productName = "Synergy Installer";
 			productReference = CA059237089C32C900A3901F /* SynergyKM Installer.app */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>Synergy Installer</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Synergy_Installer</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.application";
 		};
 		CA5B4F0A083DF8D00071F3C7 /* StatusMenu */ = {
@@ -974,42 +852,11 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
-				INFOPLIST_FILE = Components/StatusMenu/Resources/Info.plist;
-				LIBRARY_STYLE = BUNDLE;
-				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				PRODUCT_NAME = SynergyKM;
-				WRAPPER_EXTENSION = menu;
-			};
 			dependencies = (
 			);
 			name = StatusMenu;
 			productName = StatusMenu;
 			productReference = CA5B4F0B083DF8D00071F3C7 /* SynergyKM.menu */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>StatusMenu</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.StatusMenu</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.bundle";
 		};
 		CA6C7371083B96D50006D65C /* Daemon */ = {
@@ -1022,46 +869,11 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
-				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
-				INFOPLIST_FILE = Components/Daemon/Resources/Info.plist;
-				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				PRODUCT_NAME = Synergyd;
-			};
 			dependencies = (
-				CA6D6FF3087B06AC0086E3BB /* PBXTargetDependency */,
-				CA6D6FF5087B06AC0086E3BB /* PBXTargetDependency */,
 			);
 			name = Daemon;
 			productName = Synergyd;
 			productReference = CA6C7372083B96D50006D65C /* Synergyd.app */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>Synergyd</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Synergyd</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.application";
 		};
 		CA6C73ED083B9AE60006D65C /* Prefpane */ = {
@@ -1074,44 +886,13 @@
 			);
 			buildRules = (
 			);
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Components/Common/SynergyKM_Prefix.pch;
-				INFOPLIST_FILE = Components/Prefpane/Resources/Info.plist;
-				LIBRARY_STYLE = BUNDLE;
-				MACOSX_DEPLOYMENT_TARGET = 10.2;
-				PRODUCT_NAME = SynergyKM;
-				WRAPPER_EXTENSION = prefpane;
-			};
 			dependencies = (
 				CA6C7463083B9DAD0006D65C /* PBXTargetDependency */,
 				CA5B52FC083E9FC90071F3C7 /* PBXTargetDependency */,
-				4C4C6DF209A1CA5100B694DC /* PBXTargetDependency */,
 			);
 			name = Prefpane;
 			productName = Prefpane;
 			productReference = CA6C73EE083B9AE60006D65C /* SynergyKM.prefpane */;
-			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
-<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
-<plist version=\"1.0\">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>English</string>
-	<key>CFBundleExecutable</key>
-	<string>Prefpane</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.Prefpane</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
-</dict>
-</plist>
-";
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -1120,14 +901,7 @@
 		CA6C72EB083B926D0006D65C /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = CA3CDB81087AF15F00A4B356 /* Build configuration list for PBXProject "SynergyKM" */;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.3;
-				SDKROOT = /Developer/SDKs/MacOSX10.3.9.sdk;
-			};
-			buildStyles = (
-				CA6C72E9083B926D0006D65C /* Development */,
-				CA6C72EA083B926D0006D65C /* Deployment */,
-			);
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 0;
 			mainGroup = CA6C72E7083B926D0006D65C;
 			productRefGroup = CA6C7373083B96D50006D65C /* Products */;
@@ -1138,10 +912,11 @@
 					ProjectRef = 4C39E8630924C78C009BD9B1 /* MenuCracker.xcodeproj */;
 				},
 				{
-					ProductGroup = CAACFC57087B04FD005200AB /* Products */;
-					ProjectRef = CAACFC56087B04FD005200AB /* synergy.xcodeproj */;
+					ProductGroup = 27656AB50EC2614800951CF8 /* Products */;
+					ProjectRef = CAACFC56087B04FD005200AB /* synergy.xcode */;
 				},
 			);
+			projectRoot = "";
 			targets = (
 				CA6C745B083B9D8B0006D65C /* All */,
 				CA6C7371083B96D50006D65C /* Daemon */,
@@ -1155,6 +930,90 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		27656AC50EC2614800951CF8 /* libarch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libarch.a;
+			remoteRef = 27656AC40EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656AC70EC2614800951CF8 /* libcommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcommon.a;
+			remoteRef = 27656AC60EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656AC90EC2614800951CF8 /* libbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase.a;
+			remoteRef = 27656AC80EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656ACB0EC2614800951CF8 /* libmt.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libmt.a;
+			remoteRef = 27656ACA0EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656ACD0EC2614800951CF8 /* libio.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libio.a;
+			remoteRef = 27656ACC0EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656ACF0EC2614800951CF8 /* libnet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libnet.a;
+			remoteRef = 27656ACE0EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656AD10EC2614800951CF8 /* libsynergy.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsynergy.a;
+			remoteRef = 27656AD00EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656AD30EC2614800951CF8 /* libplatform.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libplatform.a;
+			remoteRef = 27656AD20EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656AD50EC2614800951CF8 /* libclient.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libclient.a;
+			remoteRef = 27656AD40EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656AD70EC2614800951CF8 /* libserver.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libserver.a;
+			remoteRef = 27656AD60EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656AD90EC2614800951CF8 /* synergyc */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = synergyc;
+			remoteRef = 27656AD80EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		27656ADB0EC2614800951CF8 /* synergys */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = synergys;
+			remoteRef = 27656ADA0EC2614800951CF8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		4C39E86B0924C78C009BD9B1 /* MenuCracker.menu */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -1174,90 +1033,6 @@
 			fileType = "compiled.mach-o.executable";
 			path = version;
 			remoteRef = 4C39E86E0924C78C009BD9B1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC68087B04FE005200AB /* libarch.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libarch.a;
-			remoteRef = CAACFC67087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC6A087B04FE005200AB /* libcommon.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcommon.a;
-			remoteRef = CAACFC69087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC6C087B04FE005200AB /* libbase.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libbase.a;
-			remoteRef = CAACFC6B087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC6E087B04FE005200AB /* libmt.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libmt.a;
-			remoteRef = CAACFC6D087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC70087B04FE005200AB /* libio.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libio.a;
-			remoteRef = CAACFC6F087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC72087B04FE005200AB /* libnet.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libnet.a;
-			remoteRef = CAACFC71087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC74087B04FE005200AB /* libsynergy.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libsynergy.a;
-			remoteRef = CAACFC73087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC76087B04FE005200AB /* libplatform.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libplatform.a;
-			remoteRef = CAACFC75087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC78087B04FE005200AB /* libclient.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libclient.a;
-			remoteRef = CAACFC77087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC7A087B04FE005200AB /* libserver.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libserver.a;
-			remoteRef = CAACFC79087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC7C087B04FE005200AB /* synergyc */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = synergyc;
-			remoteRef = CAACFC7B087B04FE005200AB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CAACFC7E087B04FE005200AB /* synergys */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
-			path = synergys;
-			remoteRef = CAACFC7D087B04FE005200AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1345,7 +1120,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH=\"/usr/local/bin:/usr/bin:/bin:/opt/local/bin:/sw/bin:$PATH\"\nrm -rf \"$BUILT_PRODUCTS_DIR/SynergyKM Help\"\nsvn export \"$PROJECT_DIR/Documentation/SynergyKM Help\" \"$BUILT_PRODUCTS_DIR/SynergyKM Help\"\n";
+			shellScript = "PATH=\"/usr/local/bin:/usr/bin:/bin:/opt/local/bin:/sw/bin:$PATH\"\nrm -rf \"$BUILT_PRODUCTS_DIR/SynergyKM Help\"\n#svn export \"$PROJECT_DIR/Documentation/SynergyKM Help\" \"$BUILT_PRODUCTS_DIR/SynergyKM Help\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1429,11 +1204,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C4C6DF209A1CA5100B694DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MenuCracker;
-			targetProxy = 4C4C6DF109A1CA5100B694DC /* PBXContainerItemProxy */;
-		};
 		CA059243089C32D800A3901F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CA05913D089C2E6B00A3901F /* quitsynergyd */;
@@ -1473,16 +1243,6 @@
 			isa = PBXTargetDependency;
 			target = CA6C7371083B96D50006D65C /* Daemon */;
 			targetProxy = CA6C7462083B9DAD0006D65C /* PBXContainerItemProxy */;
-		};
-		CA6D6FF3087B06AC0086E3BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = synergyc;
-			targetProxy = CA6D6FF2087B06AC0086E3BB /* PBXContainerItemProxy */;
-		};
-		CA6D6FF5087B06AC0086E3BB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = synergys;
-			targetProxy = CA6D6FF4087B06AC0086E3BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1567,7 +1327,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				OPTIMIZATION_CFLAGS = "-O0";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -1586,7 +1346,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				OPTIMIZATION_CFLAGS = "-O0";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -1626,7 +1386,7 @@
 				INFOPLIST_FILE = Components/Daemon/Resources/Info.plist;
 				PRODUCT_NAME = Synergyd;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Debug;
 		};
@@ -1638,7 +1398,7 @@
 				INFOPLIST_FILE = Components/Daemon/Resources/Info.plist;
 				PRODUCT_NAME = Synergyd;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 			};
 			name = Release;
 		};
@@ -1680,7 +1440,7 @@
 				LIBRARY_STYLE = BUNDLE;
 				PRODUCT_NAME = SynergyKM;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Debug;
@@ -1695,7 +1455,7 @@
 				LIBRARY_STYLE = BUNDLE;
 				PRODUCT_NAME = SynergyKM;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 				WRAPPER_EXTENSION = prefpane;
 			};
 			name = Release;
@@ -1728,11 +1488,12 @@
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
+				GCC_VERSION_ppc = 4.0;
 				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
-				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
@@ -1749,11 +1510,12 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_VERSION_i386 = 4.0;
-				GCC_VERSION_ppc = 3.3;
+				GCC_VERSION_ppc = 4.0;
 				MACOSX_DEPLOYMENT_TARGET_i386 = 10.4;
-				MACOSX_DEPLOYMENT_TARGET_ppc = 10.2;
+				MACOSX_DEPLOYMENT_TARGET_ppc = 10.4;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				SDKROOT_i386 = /Developer/SDKs/MacOSX10.4u.sdk;
-				SDKROOT_ppc = /Developer/SDKs/MacOSX10.2.8.sdk;
+				SDKROOT_ppc = /Developer/SDKs/MacOSX10.4u.sdk;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
